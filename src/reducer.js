@@ -1,13 +1,13 @@
 const reducer = (state, action) => {
     switch (action.type) {
-        case "INCREMENT_TEAM_ONE": return {
+        case "INC_TEAM": return {
             ...state,
-            value: state.value + 1
+            team_one_score: state.team_one_score + 1
         };
 
-        case "DECREMENT_TEAM_ONE": return {
+        case "DEC_TEAM": return {
             ...state,
-            value: state.value - 1
+            team_one_score: state.team_one_score - 1
         };
 
         default: return state;

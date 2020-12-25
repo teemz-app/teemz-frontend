@@ -3,24 +3,55 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
 import { createStore } from "redux";
-import initial from './Initial';
-import reducer from './reducer';
-import store from './store';
 
-store.subscribe(() => {
+// import { Provider } from 'react-redux';
+
+// import store from './store';
+
+const initial = {
+  team_score: 0,
+};
+
+let reducer = (state, action) => {
+  switch (action.type) {
+      case "INC_TEAM": return {
+          ...state,
+          team_score: state.team_score + 1
+      };
+
+      case "DEC_TEAM": return {
+          ...state,
+          team_score: state.team_score - 1
+      };
+
+      default: return state;
+  }
+};
+
+const store = createStore(reducer, initial);
+
+let render = () => {
   let state = store.getState();
-  console.log(state.team_one_score);
-})
 
-store.dispatch({ type: "INCREMENT_TEAM_ONE"})
+  ReactDOM.render(
+    <React.StrictMode>
+      <App 
+        team_score = { state.team_score }
+        onIncrement = { () => store.dispatch({ type: "INC_TEAM" }) }
+      />
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
+}
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+store.subscribe(render);
+render();
+
+
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
