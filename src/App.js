@@ -1,10 +1,10 @@
 import Score from "./components/Score";
 
-const App = ({team_score, onIncrement, onDecrement}) => ( 
+const App = ({ onIncrement, onDecrement}) => ( 
     <>
         <h1>Set Score</h1>
         
-        <Score team_score = { team_score } />
+        <Score />
 
         <div>
             <button

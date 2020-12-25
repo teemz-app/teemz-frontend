@@ -8,13 +8,10 @@ import { Provider } from 'react-redux';
 
 import store from './data/store';
 
-let state = store.getState();
-
 ReactDOM.render(
   <React.StrictMode>
     <Provider store= { store }>
     <App 
-        team_score = { state.team_score }
         onIncrement = { () => store.dispatch({ type: "INC_TEAM" }) }
         onDecrement = { () => store.dispatch({ type: "DEC_TEAM" }) }
       />
