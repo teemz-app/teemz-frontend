@@ -6,49 +6,71 @@ class Menu extends Component {
     
         this.state = {
             page: "menu",
+            playerInput: ""
         };
 
         this.handleGenTeams = this.handleGenTeams.bind(this);
         this.handleSeePlayers = this.handleSeePlayers.bind(this);
         this.handleSeeMatches = this.handleSeeMatches.bind(this);
         this.handleAddPlayer = this.handleAddPlayer.bind(this);
-        this.handlePlayerInput = this.handlePlayerInput.bind(this);  
+        // this.handlePlayerInput = this.handlePlayerInput.bind(this);  
     }
 
     // componentDidMount() {
-    // 	this.props.getGifts();
+    // 	this.props.postPlayer();
     // }
 
-    handlePlayerInput(e) {
-        this.setState({ item_name: e.currentTarget.value });
+    handleGenTeams(e) {
+        e.preventDefault();
+        this.setState({page: "generate_team" });
     }
 
+    handleSeePlayers(e) {
+        e.preventDefault();
+        this.setState({ page: "see_players" });
+    }
+
+    handleSeeMatches(e) {
+        e.preventDefault();
+        this.setState({ page: "see_matches" });
+    }
+
+    handleAddPlayer(e) { 
+        e.preventDefault();
+        console.log("player added!") }
+
+    // handlePlayerInput(e) {
+    //     this.setState({ playerInput: e.currentTarget.value });
+    // }
+
     render() {
+        // let { playerInput } = this.state;
+
         return (
             <>
                 <h1>Teemz</h1>
 
                 <form>
                     <Button
-                    onClick = {console.log("generated!")}
-                    name = "Generate Teams"
+                    onClick = { this.handleGenTeams }
+                    label = "Generate Teams"
                     />
 
                     <Button
-                    onClick = {console.log("see players!")}
-                    name = "See Players"
+                    onClick = { this.handleSeePlayers }
+                    label = "See Players"
                     />
 
                     <Button
-                    onClick = {console.log("See matches!")}
-                    name = "See Matches"
+                    onClick = { this.handleSeeMatches }
+                    label = "See Matches"
                     />
 
-                    <input></input>
+                    <input handleChange= { this.handlePlayerInput }></input>
 
                     <Button
-                    onClick = {console.log("player added!")}
-                    name = "Add Player"
+                    onClick = { this.handleAddPlayer }
+                    label = "Add Player"
                     />  
 
                 </form>
