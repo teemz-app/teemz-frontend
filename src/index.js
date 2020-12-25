@@ -4,25 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { Provider } from 'react-redux';
+
 import store from './data/store';
 
-let render = () => {
-  let state = store.getState();
+let state = store.getState();
 
-  ReactDOM.render(
-    <React.StrictMode>
-      <App 
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store= { store }>
+    <App 
         team_score = { state.team_score }
         onIncrement = { () => store.dispatch({ type: "INC_TEAM" }) }
         onDecrement = { () => store.dispatch({ type: "DEC_TEAM" }) }
       />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
-}
-
-store.subscribe(render);
-render();
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
 
 
