@@ -4,33 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { createStore } from "redux";
-
-// import { Provider } from 'react-redux';
-
-// import store from './store';
-
-const initial = {
-  team_score: 0,
-};
-
-let reducer = (state, action) => {
-  switch (action.type) {
-      case "INC_TEAM": return {
-          ...state,
-          team_score: state.team_score + 1
-      };
-
-      case "DEC_TEAM": return {
-          ...state,
-          team_score: state.team_score - 1
-      };
-
-      default: return state;
-  }
-};
-
-const store = createStore(reducer, initial);
+import store from './data/store';
 
 let render = () => {
   let state = store.getState();
@@ -40,6 +14,7 @@ let render = () => {
       <App 
         team_score = { state.team_score }
         onIncrement = { () => store.dispatch({ type: "INC_TEAM" }) }
+        onDecrement = { () => store.dispatch({ type: "DEC_TEAM" }) }
       />
     </React.StrictMode>,
     document.getElementById('root')
