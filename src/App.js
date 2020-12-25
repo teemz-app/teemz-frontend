@@ -1,10 +1,10 @@
 import './App.css';
+import Counter from './components/Counter';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-    </div>
-  );
+    <Counter />
+    );
 }
 
 export default App;
