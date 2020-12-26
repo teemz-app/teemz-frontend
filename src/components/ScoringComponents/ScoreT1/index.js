@@ -3,7 +3,7 @@ import Score from "./Score";
 
 let mapStateToProps = (state) => {
     return {
-        team_score: state.team_score,
+        team_one_score: state.team_one_score,
     };
 };
 

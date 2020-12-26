@@ -1,9 +1,7 @@
-import ScoreCard from "./components/ScoreCard.js";
+import ScoreCard from "./components/ScoringComponents/ScoreCardT1";
 
 const App = () => ( 
-    <>
-        <h1>Set Score</h1>
-        
+    <>  
         <ScoreCard />
     </>
 );
