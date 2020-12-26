@@ -1,10 +1,13 @@
-import './App.css';
+import Score from "./components/Score";
+import ScoreButtons from "./components/ScoreButtons";
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
-}
+const App = () => ( 
+    <>
+        <h1>Set Score</h1>
+        
+        <Score />
+        <ScoreButtons />
+    </>
+);
 
 export default App;
