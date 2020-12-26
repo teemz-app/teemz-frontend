@@ -11,10 +11,7 @@ import store from './data/store';
 ReactDOM.render(
   <React.StrictMode>
     <Provider store= { store }>
-    <App 
-        onIncrement = { () => store.dispatch({ type: "INC_TEAM" }) }
-        onDecrement = { () => store.dispatch({ type: "DEC_TEAM" }) }
-      />
+    <App />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
