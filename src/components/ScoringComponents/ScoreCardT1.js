@@ -1,18 +1,11 @@
 import ScoreT1 from "./ScoreT1";
 import ScoreButtonsT1 from "./ScoreButtonsT1";
 
-import ScoreT2 from "./ScoreT2";
-import ScoreButtonsT2 from "./ScoreButtonsT2";
-
 const ScoreCard = () => ( 
     <>
-        <h1>Set Score</h1>
-        
+        <h2>Set Score</h2>   
         <ScoreT1 />
         <ScoreButtonsT1 />
-
-        <ScoreT2 />
-        <ScoreButtonsT2 />
     </>
 );
 
