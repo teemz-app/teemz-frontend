@@ -3,8 +3,10 @@ const initial = {
     team_one_score: 0,
     team_two_score: 0,
 
+    all_players: [],
     team_one_players: ["Katara", "Ang", "Apa", "Sokka", "Momo"],
-    team_two_players: ["Pabu", "Iroh", "Azula", "Zuko", "Toph"]
+    team_two_players: ["Pabu", "Iroh", "Azula", "Zuko", "Toph"],
+
 };
 
 export default initial;
