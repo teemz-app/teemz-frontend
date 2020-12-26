@@ -1,7 +1,7 @@
-import ScoreT1 from "../../ScoringComponents/ScoreT1";
-import ScoreButtonsT1 from "../../ScoringComponents/ScoreButtonsT1";
+import ScoreT1 from "../ScoringComponents/ScoreT1";
+import ScoreButtonsT1 from "../ScoringComponents/ScoreButtonsT1";
 
-const ScoreCard = () => ( 
+const ScoreCardT1 = () => ( 
     <>
         <h2>Set Score</h2>   
         <ScoreT1 />
@@ -9,4 +9,4 @@ const ScoreCard = () => (
     </>
 );
 
-export default ScoreCard;
+export default ScoreCardT1;

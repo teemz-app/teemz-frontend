@@ -1,7 +1,7 @@
 import ScoreT2 from "./ScoreT2";
 import ScoreButtonsT2 from "./ScoreButtonsT2";
 
-const ScoreCard = () => ( 
+const ScoreCardT2 = () => ( 
     <>
         <h2>Set Score</h2>
 
@@ -10,4 +10,4 @@ const ScoreCard = () => (
     </>
 );
 
-export default ScoreCard;
+export default ScoreCardT2;
