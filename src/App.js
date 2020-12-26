@@ -1,9 +1,10 @@
 import TeamCardT1 from "./components/TeamCardT1";
-import initial from "./data/Initial";
+import TeamCardT2 from "./components/TeamCardT2";
 
 const App = () => ( 
     <>  
         <TeamCardT1 />
+        <TeamCardT2 />
     </>
 );
 
