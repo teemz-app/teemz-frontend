@@ -1,22 +1,23 @@
-const incrementReducer = (state) => {
-    return {
-        ...state,
-        team_score: state.team_score + 1
-    };
-}
+// Control Team One Scoring
+import incReducerT1 from './ScoringCardsLogic/incReducerT1';
+import decReducerT1 from './ScoringCardsLogic/decReducerT1';
 
-const decrementReducer = (state) => {
-    return {
-        ...state,
-        team_score: state.team_score > 0 ? state.team_score - 1 : state.team_score // ternary to avoid negative scores
-    };
-}
+// Control Team Two Scoring
+import incReducerT2 from './ScoringCardsLogic/incReducerT2';
+import decReducerT2 from './ScoringCardsLogic/decReducerT2';
+
 
 
 let reducer = (state, action) => {
     switch (action.type) {
-        case "INC_TEAM": return incrementReducer(state);
-        case "DEC_TEAM": return decrementReducer(state);
+
+        // Team One Scoring
+        case "INC_TEAM_ONE": return incReducerT1(state);
+        case "DEC_TEAM_ONE": return decReducerT1(state);
+
+        // Team Two Scoring
+        case "INC_TEAM_TWO": return incReducerT2(state);
+        case "DEC_TEAM_TWO": return decReducerT2(state);
         default: return state;
     }
 };
