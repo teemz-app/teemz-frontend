@@ -1,12 +1,10 @@
-import Score from "./components/Score";
-import ScoreButtons from "./components/ScoreButtons";
+import ScoreCard from "./components/ScoreCard.js";
 
 const App = () => ( 
     <>
         <h1>Set Score</h1>
         
-        <Score />
-        <ScoreButtons />
+        <ScoreCard />
     </>
 );
 
