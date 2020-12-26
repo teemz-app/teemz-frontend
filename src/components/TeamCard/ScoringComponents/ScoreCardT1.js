@@ -1,5 +1,5 @@
-import ScoreT1 from "./ScoreT1";
-import ScoreButtonsT1 from "./ScoreButtonsT1";
+import ScoreT1 from "../../ScoringComponents/ScoreT1";
+import ScoreButtonsT1 from "../../ScoringComponents/ScoreButtonsT1";
 
 const ScoreCard = () => ( 
     <>

@@ -1,16 +1,16 @@
-import ScoreCardT1 from "./components/ScoringComponents/ScoreCardT1";
-import PlayersCardT1 from './components/PlayersCardT1';
+// import ScoreCardT1 from "./components/TeamCard/ScoreCardT1";
+// import PlayersCardT1 from './components/TeamCard/PlayersCardT1';
 
-import ScoreCardT2 from "./components/ScoringComponents/ScoreCardT2";
-import PlayersCardT2 from './components/PlayersCardT2';
+// import ScoreCardT2 from "./components/ScoringComponents/ScoreCardT2";
+// import PlayersCardT2 from './components/PlayersCardT2';
 
 const App = () => ( 
     <>  
-        <PlayersCardT1 />
+        {/* <PlayersCardT1 />
         <ScoreCardT1 />
 
         <PlayersCardT2 />
-        <ScoreCardT2 />
+        <ScoreCardT2 /> */}
     </>
 );
 
