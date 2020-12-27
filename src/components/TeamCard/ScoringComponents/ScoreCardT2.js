@@ -3,7 +3,7 @@ import ScoreButtonsT2 from "./ScoreButtonsT2";
 
 const ScoreCardT2 = () => ( 
     <>
-        <h2>Set Score</h2>
+        <h3>Set Score</h3>
 
         <ScoreT2 />
         <ScoreButtonsT2 />

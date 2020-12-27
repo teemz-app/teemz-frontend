@@ -1,10 +1,8 @@
-import TeamCardT1 from "./components/TeamCardT1";
-import TeamCardT2 from "./components/TeamCardT2";
+import GenerateMatch from './pages/GenerateMatch';
 
 const App = () => ( 
     <>  
-        <TeamCardT1 />
-        <TeamCardT2 />
+        <GenerateMatch />
     </>
 );
 
