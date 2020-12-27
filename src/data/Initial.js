@@ -8,12 +8,12 @@ const initial = {
     team_one_name: "Team 1",
     team_two_name: "Team 2",
 
-    team_size: 10,
+    teams_size: 10,
 
     players: ["Katara", "Ang", "Apa", "Sokka", "Momo", "Pabu", "Iroh", "Azula", "Zuko", "Toph"],
     ten_players: [],
     team_one_players: [],
-    team_two_players: ["Pabu", "Iroh", "Azula", "Zuko", "Toph"],
+    team_two_players: [],
 
 };
 
