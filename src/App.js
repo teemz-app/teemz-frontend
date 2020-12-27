@@ -1,4 +1,4 @@
-import GenerateMatch from './pages/GenerateMatch';
+import GenerateMatch from './pages/GenerateMatch/GenerateMatch';
 
 const App = () => ( 
     <>  

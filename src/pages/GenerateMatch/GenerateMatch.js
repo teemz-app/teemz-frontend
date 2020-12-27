@@ -1,5 +1,5 @@
-import TeamCardT1 from "../components/TeamCardT1";
-import TeamCardT2 from "../components/TeamCardT2";
+import TeamCardT1 from "../../components/TeamCardT1";
+import TeamCardT2 from "../../components/TeamCardT2";
 
 const GenerateMatch = () => ( 
     <>  
