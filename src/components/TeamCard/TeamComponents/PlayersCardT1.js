@@ -5,9 +5,10 @@ let Players = () => {
     return (
         <ul>
         {
-            initial.team_one_players.map((player) => (
-                <RowPlayer name = { player } key = { player.id } />
-            ))
+            initial.team_one_players.map(player => (
+                    <RowPlayer name = { player } key = { player.id } />
+            )
+            )
         }
     </ul>
     )
