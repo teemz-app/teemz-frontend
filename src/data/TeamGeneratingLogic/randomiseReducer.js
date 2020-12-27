@@ -8,6 +8,8 @@ The inner loop ensures that no player is selected twice.
 let randomPlayerIndex = () => Math.floor(Math.random() * (initial.players.length - 1));
 
 let tenPlayers = [];
+let teamOnePlayers = [];
+let teamTwoPlayers = [];
 
 while (tenPlayers.length < initial.teams_size) {
     let index = randomPlayerIndex();
@@ -19,18 +21,16 @@ while (tenPlayers.length < initial.teams_size) {
 
 /* Now that we have 10 random players, we need to add them to teams one and two */
 
-// let teamsPopulate = (state) => {
-//     for (let i = 0; i < state.teamsSize; i += 1) {
-//         state.team_one_players < state.team_two_players ? state.team_two_players.push(state.ten_players[i]) : state.team_one_players.push(state.ten_players[i]);
-//     }
-// }
-
-// teamsPopulate(); // populate teams with 5 players each
+for (let i = 0; i < initial.teams_size; i += 1) {
+    teamOnePlayers.length >= teamTwoPlayers.length ? teamTwoPlayers.push(tenPlayers[i]) : teamOnePlayers.push(tenPlayers[i]);
+}
 
 const randomiseReducer = (state) => {
     return {
         ...state,
-        ten_players: tenPlayers
+        ten_players: tenPlayers,
+        team_one_players: teamOnePlayers,
+        team_two_players: teamTwoPlayers
     };
 }
 
