@@ -1,8 +1,8 @@
-import ScoreCard from "./components/ScoringComponents/ScoreCardT1";
+import GenerateMatch from './pages/GenerateMatch';
 
 const App = () => ( 
     <>  
-        <ScoreCard />
+        <GenerateMatch />
     </>
 );
 

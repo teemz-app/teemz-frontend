@@ -1,10 +1,10 @@
 import { connect } from "react-redux";
 import ScoreButtons from "./ScoreButtons";
-import { incTeamOne, decTeamOne } from '../../../data/actions.js';
+import { incTeamTwo, decTeamTwo } from '../../../../data/actions.js';
 
 let mapDispatchToProps = (dispatch) => ({
-    onIncrement: () => dispatch(incTeamOne()),
-    onDecrement: () => dispatch(decTeamOne()),
+    onIncrement: () => dispatch(incTeamTwo()),
+    onDecrement: () => dispatch(decTeamTwo()),
 });
 
 export default connect(null, mapDispatchToProps)(ScoreButtons);
