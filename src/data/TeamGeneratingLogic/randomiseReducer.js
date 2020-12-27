@@ -40,7 +40,7 @@ let teamsPopulate = () => {
 
 teamsPopulate(); // populate teams with 5 players each
 
-const randomise = (state) => {
+const randomiseReducer = (state) => {
     return {
         ...state,
         team_one_players: state.team_one_players.push(team_one_players),
@@ -48,4 +48,4 @@ const randomise = (state) => {
     };
 }
 
-export default randomise;
+export default randomiseReducer;
