@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
-import Players from './PlayersCardT1';
+import Players from './PlayersCardT2';
 
 const mapStateToProps = (state) => {
     return {
-        team_one_players: state.team_one_players
+        team_two_players: state.team_two_players
     };
 };
 

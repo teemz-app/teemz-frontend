@@ -1,6 +1,6 @@
-import PlayersCardT1 from './TeamCard/TeamComponents/PlayersCardT1';
 import ScoreCard from './TeamCard/ScoringComponents/ScoreCardT1';
 import initial from '../data/Initial';
+import PlayersCardT1 from './TeamCard/TeamComponents/PlayersCardT1';
 
 let TeamCardT1 = () =>(
     <>

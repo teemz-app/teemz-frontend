@@ -6,12 +6,12 @@ import RowPlayer from '../RowPlayer';
 
 // }
 
-const PlayersCardT1 = ({ team_one_players }) => {
-
+const PlayersCardT2 = ({ team_two_players }) => {
+    
     return (
         <ul>
         {
-            team_one_players.map(player => (
+            team_two_players.map(player => (
                 <RowPlayer name = { player } key = { player.id } />
             ))
         }
@@ -20,4 +20,4 @@ const PlayersCardT1 = ({ team_one_players }) => {
 
 }
 
-export default PlayersCardT1;
+export default PlayersCardT2;
