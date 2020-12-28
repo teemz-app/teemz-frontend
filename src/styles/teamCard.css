@@ -1,4 +1,15 @@
-.playerName {
-    font-size: 1.5rem;
-    color: red;
+.teamCard_container {
+    background-color: var(--darkGreen);
+    border-radius: 10px;
+    margin: auto;
+
+    width: 40%;
+    min-width: 300px;
+    justify-content: center;
+}
+
+.teamCard_teamName {
+    font-size: 32px;
+    color: var(--brightGreen);
+    margin: auto;
 }
