@@ -1,8 +1,10 @@
-import GenerateMatch from './pages/GenerateMatch';
+import GenerateMatch from './pages/GenerateMatch/GenerateMatch';
+import GenerateTeams from './components/GenerateTeams/GenerateTeams';
 
 const App = () => ( 
     <>  
         <GenerateMatch />
+        <GenerateTeams />
     </>
 );
 

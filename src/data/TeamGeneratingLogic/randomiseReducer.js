@@ -5,46 +5,32 @@ In order to randomly pick 10 players, a nested loop is used. The first loop tell
 The inner loop ensures that no player is selected twice.
 */
 
-let randomPlayerIndex = () => Math.floor(Math.random() * (initial.players.length));
+let randomPlayerIndex = () => Math.floor(Math.random() * (initial.players.length - 1));
 
-let teamsSize = initial.teams_size; // for future feature of modifying team sizes
-let players = initial.players;
-let ten_players = initial.ten_players;
+let tenPlayers = [];
+let teamOnePlayers = [];
+let teamTwoPlayers = [];
 
-let playersPopulate = () => {
-    while (players.length < teamsSize) {
-        let index = randomPlayerIndex();
+while (tenPlayers.length < initial.teams_size) {
+    let index = randomPlayerIndex();
 
-        for (let i = 0; i < ten_players.length; i += 1) {
-            if (players[index] !== ten_players[i]) {
-                return {
-                    ...state,
-                    ten_players: state.ten_players.push(players[index])
-                };
-            }
-        }
+    if (!tenPlayers.includes(initial.players[index])) {
+        tenPlayers.push(initial.players[index])
     }
 }
-
-playersPopulate(); // populates ten_players array with 10 players
 
 /* Now that we have 10 random players, we need to add them to teams one and two */
-let team_one_players = initial.team_one_players;
-let team_two_players = initial.team_two_players;
 
-let teamsPopulate = () => {
-    for (let i = 0; i < teamsSize; i += 1) {
-        team_one_players < team_two_players ? team_two_players.push(ten_players[i]) : team_one_players.push(ten_players[i]);
-    }
+for (let i = 0; i < initial.teams_size; i += 1) {
+    teamOnePlayers.length >= teamTwoPlayers.length ? teamTwoPlayers.push(tenPlayers[i]) : teamOnePlayers.push(tenPlayers[i]);
 }
-
-teamsPopulate(); // populate teams with 5 players each
 
 const randomiseReducer = (state) => {
     return {
         ...state,
-        team_one_players: state.team_one_players.push(team_one_players),
-        team_two_players: state.team_two_players.push(team_two_players),
+        ten_players: tenPlayers,
+        team_one_players: teamOnePlayers,
+        team_two_players: teamTwoPlayers
     };
 }
 

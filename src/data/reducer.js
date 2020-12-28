@@ -6,6 +6,9 @@ import decReducerT1 from './ScoringCardsLogic/decReducerT1';
 import incReducerT2 from './ScoringCardsLogic/incReducerT2';
 import decReducerT2 from './ScoringCardsLogic/decReducerT2';
 
+// Generate Teams
+import randomiseReducer from './TeamGeneratingLogic/randomiseReducer';
+
 
 
 let reducer = (state, action) => {
@@ -18,7 +21,10 @@ let reducer = (state, action) => {
         // Team Two Scoring
         case "INC_TEAM_TWO": return incReducerT2(state);
         case "DEC_TEAM_TWO": return decReducerT2(state);
-        default: return state;
+
+        // Generate Teams
+        case "GENERATE_TEAMS": return randomiseReducer(state);
+        default: return randomiseReducer(state);
     }
 };
 
