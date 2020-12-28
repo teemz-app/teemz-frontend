@@ -1,6 +1,6 @@
 const Score = ({ team_two_score }) => ( 
     <>  
-        <p>{ team_two_score }</p>
+        <p className="teamCard_teamScore">{ team_two_score }</p>
     </>
 );
 

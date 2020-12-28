@@ -15,7 +15,7 @@ const PlayersCardT2 = ({ team_two_players }) => {
                 <RowPlayer name = { player } key = { player } />
             ))
         }
-    </ul>
+        </ul>
     )
 
 }

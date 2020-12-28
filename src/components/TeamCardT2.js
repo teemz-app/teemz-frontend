@@ -4,9 +4,11 @@ import initial from '../data/Initial';
 
 let TeamCardT1 = () => (
     <>
-        <h2>{ initial.team_two_name }</h2>   
-        <PlayersCardT2 />
-        <ScoreCard />
+        <div className="teamCard_container">
+            <h2 className="teamCard_teamName">{ initial.team_two_name }</h2>   
+            <PlayersCardT2 />
+            <ScoreCard />
+        </div>
     </>
 )
 
