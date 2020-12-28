@@ -1,5 +1,5 @@
 import GenerateMatch from './pages/GenerateMatch/GenerateMatch';
-import GenerateTeams from './components/GenerateTeams/GenerateTeams';
+import GenerateTeams from './components/GenerateTeams';
 
 const App = () => ( 
     <>  
