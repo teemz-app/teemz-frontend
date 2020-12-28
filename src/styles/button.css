@@ -1,0 +1,13 @@
+.doButton  {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--brightGreen);
+
+    width: 45%;
+    max-width: 300px;
+
+    color: var(--darkGreen);
+    font-weight: bold;
+    font-size: 1rem;
+}

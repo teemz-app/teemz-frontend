@@ -3,6 +3,8 @@
 @import "./styles/background.css";
 @import "./styles/settings.css";
 
+@import "./styles/button.css";
+
 
 @import "./styles/teamCard.css";
 
@@ -14,4 +16,8 @@
     font-size: 3rem;
 
     margin: 1rem;
+}
+
+body {
+    text-align: center;
 }
