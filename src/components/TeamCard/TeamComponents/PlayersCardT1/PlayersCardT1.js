@@ -12,7 +12,7 @@ const PlayersCardT1 = ({ team_one_players }) => {
         <ul>
         {
             team_one_players.map(player => (
-                <RowPlayer name = { player } key = { player.id } />
+                <RowPlayer name = { player } key = { player } />
             ))
         }
     </ul>
