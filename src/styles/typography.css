@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); /* Ubuntu */
 
 
-p {
+p, button {
     font-family: "Cabin", sans-serif;
 }
 
