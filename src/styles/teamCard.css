@@ -1,0 +1,57 @@
+.teamCard_container {
+    background-color: var(--darkGreen);
+    border-radius: 10px;
+    margin: auto;
+
+    width: 40%;
+    min-width: 300px;
+    max-width: 600px;
+    text-align:center;
+}
+
+.teamCard_teamName {
+    font-size: 2rem;
+    color: var(--brightGreen);
+    padding-top: 2%;
+}
+
+.teamCard_playerName {
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--brightGreen);
+
+    width: 50%;
+    max-width: 590px;
+
+    color: var(--darkGreen);
+    font-weight: bold;
+}
+
+.teamCard_setScore {
+    font-size: 1.5rem;
+    font-weight: normal;
+
+    margin-top: 1.5rem;
+
+    color: var(--lightGreen);
+}
+
+.teamCard_teamScore {
+    font-size: 3rem;
+    font-weight: normal;
+
+
+    color: var(--lightGreen);
+}
+
+.teamCard_setScoreButton {
+    font-size: 3rem;
+
+    background-color: var(--brightGreen);
+    border: none;
+    border-radius: 5px;
+
+    padding: 0 1rem;
+    margin: 6% 8%;
+}

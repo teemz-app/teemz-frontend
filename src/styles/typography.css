@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap'); /* Cabin */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap'); /* Ubuntu */
+
+p, button {
+    font-family: "Cabin", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+}

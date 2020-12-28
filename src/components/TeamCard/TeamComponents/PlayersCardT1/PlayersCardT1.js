@@ -1,10 +1,4 @@
 import RowPlayer from '../RowPlayer';
-// import { connect } from 'react-redux';
-
-
-// class Players extends Component {
-
-// }
 
 const PlayersCardT1 = ({ team_one_players }) => {
 

@@ -3,7 +3,7 @@ import Players from './PlayersCardT1';
 
 const mapStateToProps = (state) => {
     return {
-        team_one_players: state.team_one_players
+        team_one_players: state.team_one_players,
     };
 };
 

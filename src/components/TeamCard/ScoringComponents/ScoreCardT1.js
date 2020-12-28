@@ -3,7 +3,7 @@ import ScoreButtonsT1 from "../ScoringComponents/ScoreButtonsT1";
 
 const ScoreCardT1 = () => ( 
     <>
-        <h3>Set Score</h3>   
+        <h3 className="teamCard_setScore">Set Score</h3>   
         <ScoreT1 />
         <ScoreButtonsT1 />
     </>
