@@ -27,7 +27,6 @@ for (let i = 0; i < initial.teams_size; i += 1) {
 const randomiseReducer = (state) => {
     return {
         ...state,
-        ten_players: tenPlayers,
         team_one_players: teamOnePlayers,
         team_two_players: teamTwoPlayers
     };
