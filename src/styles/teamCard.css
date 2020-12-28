@@ -44,3 +44,14 @@
 
     color: var(--lightGreen);
 }
+
+.teamCard_setScoreButton {
+    font-size: 3rem;
+
+    background-color: var(--brightGreen);
+    border: none;
+    border-radius: 5px;
+
+    padding: 0 1rem;
+    margin: 6% 8%;
+}
