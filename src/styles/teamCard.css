@@ -10,7 +10,7 @@
 }
 
 .teamCard_teamName {
-    font-size: 32px;
+    font-size: 2rem;
     color: var(--brightGreen);
     padding-top: 2%;
 }
@@ -24,5 +24,23 @@
     width: 50%;
     max-width: 590px;
 
-    
+    color: var(--darkGreen);
+    font-weight: bold;
+}
+
+.teamCard_setScore {
+    font-size: 1.5rem;
+    font-weight: normal;
+
+    margin-top: 1.5rem;
+
+    color: var(--lightGreen);
+}
+
+.teamCard_teamScore {
+    font-size: 3rem;
+    font-weight: normal;
+
+
+    color: var(--lightGreen);
 }
