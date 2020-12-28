@@ -1,6 +1,9 @@
 const RowPlayer = ({ name }) => (
     <>
-        <p className="playerName">{ name }</p>
+        <div className="teamCard_playerName">
+            <p>{ name }</p>
+        </div>
+
     </>
 );
 
