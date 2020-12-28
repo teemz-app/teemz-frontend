@@ -5,18 +5,17 @@ In order to randomly pick 10 players, a nested loop is used. The first loop tell
 The inner loop ensures that no player is selected twice.
 */
 
-let randomPlayerIndex = () => Math.floor(Math.random() * (initial.players.length - 1));
-
+let allPlayers = initial.players;
 let tenPlayers = [];
 let teamOnePlayers = [];
 let teamTwoPlayers = [];
 
+let randomPlayerIndex = () => Math.floor(Math.random() * (allPlayers.length));
+
 while (tenPlayers.length < initial.teams_size) {
     let index = randomPlayerIndex();
-
-    if (!tenPlayers.includes(initial.players[index])) {
-        tenPlayers.push(initial.players[index])
-    }
+    tenPlayers.push(initial.players[index]);
+    allPlayers.splice(index, 1);
 }
 
 /* Now that we have 10 random players, we need to add them to teams one and two */
