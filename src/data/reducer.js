@@ -24,7 +24,7 @@ let reducer = (state, action) => {
 
         // Generate Teams
         case "GENERATE_TEAMS": return randomiseReducer(state);
-        default: return randomiseReducer(state);
+        default: return state;
     }
 };
 
