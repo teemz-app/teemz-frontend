@@ -1,6 +1,6 @@
 const RowPlayer = ({ name }) => (
     <>
-        <p>{ name }</p>
+        <p className="playerName">{ name }</p>
     </>
 );
 
