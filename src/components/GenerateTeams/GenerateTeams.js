@@ -1,12 +1,11 @@
 const GenerateTeams = ({ onClick }) => ( 
     <>
-        <div>
-            <button
-                onClick= { onClick }
-            >
-                Generate Teams
-            </button>
-        </div>
+        <button
+            className="doButton"
+            onClick= { onClick }
+        >
+            Generate Teams
+        </button>
     </>
 );
 

@@ -1,7 +1,7 @@
 .teamCard_container {
     background-color: var(--darkGreen);
     border-radius: 10px;
-    margin: auto;
+    margin: 2rem auto;
 
     width: 40%;
     min-width: 300px;
@@ -47,6 +47,7 @@
 
 .teamCard_setScoreButton {
     font-size: 3rem;
+    color: var(--darkGreen);
 
     background-color: var(--brightGreen);
     border: none;

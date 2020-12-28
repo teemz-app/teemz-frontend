@@ -3,9 +3,12 @@ import GenerateTeams from './components/GenerateTeams';
 
 const App = () => ( 
     <>  
-        <h1>Teemz</h1>
-        <GenerateMatch />
+        <header>
+            <h1 className="title">Teemz</h1>
+        </header>
+        
         <GenerateTeams />
+        <GenerateMatch />
     </>
 );
 
