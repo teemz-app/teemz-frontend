@@ -5,3 +5,14 @@
 
 
 @import "./styles/teamCard.css";
+
+
+
+.title {
+    color: var(--brightGreen);
+
+    text-align: center;
+    font-size: 3rem;
+
+    margin: 1rem;
+}
