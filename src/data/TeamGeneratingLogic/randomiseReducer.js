@@ -5,7 +5,16 @@ In order to randomly pick 10 players, a nested loop is used. The first loop tell
 The inner loop ensures that no player is selected twice.
 */
 
-let allPlayers = initial.players;
+const haveAllPlayers = (state) => {
+    return {
+        ...state,
+        players: state.players,// ternary to avoid negative scores
+    };
+}
+
+let allPlayers = state.players;
+console.log(allPlayers);
+
 let tenPlayers = [];
 let teamOnePlayers = [];
 let teamTwoPlayers = [];
