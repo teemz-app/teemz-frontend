@@ -12,7 +12,7 @@ const haveAllPlayers = (state) => {
     };
 }
 
-let allPlayers = state.players;
+let allPlayers = haveAllPlayers.players;
 console.log(allPlayers);
 
 let tenPlayers = [];
