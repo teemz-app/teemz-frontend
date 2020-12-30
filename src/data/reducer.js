@@ -9,22 +9,6 @@ import decReducerT2 from './ScoringCardsLogic/decReducerT2';
 // Generate Teams
 import randomiseReducer from './TeamGeneratingLogic/randomiseReducer';
 
-const playersLoadedReducer = (state, name, wins, losses) => {
-    return {
-        ...state,
-        name: name,
-        wins: wins,
-        losses: losses,
-        loaded: true,
-    }
-}
-
-const setPlayerState = (state) =>({
-    ...state,
-    // players: action.data,
-    loaded: true,
-})
-
 let reducer = (state, action) => {
     switch (action.type) {
 
@@ -38,10 +22,6 @@ let reducer = (state, action) => {
 
         // Generate Teams
         case "GENERATE_TEAMS": return randomiseReducer(state);
-
-        case "PLAYERS_LOADED": return playersLoadedReducer(state);
-
-        case "ADD_PLAYERS": return setPlayerState(state, action);
         
         default: return state;
     }

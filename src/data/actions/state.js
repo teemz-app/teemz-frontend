@@ -30,16 +30,3 @@ export const generateTeams = () => {
         type: "GENERATE_TEAMS",
     }
 }
-
-// Download players. When this function is called, it returns the payload
-export const addPlayers = ({ id, name, wins, losses }) => {
-    return {
-        type: "ADD_PLAYERS",
-        payload: {
-            id,
-            name,
-            wins,
-            losses,
-        },
-    };
-};
