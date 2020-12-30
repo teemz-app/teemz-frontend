@@ -19,6 +19,12 @@ const playersLoadedReducer = (state, name, wins, losses) => {
     }
 }
 
+const setPlayerState = (state) =>({
+    ...state,
+    // players: action.data,
+    loaded: true,
+})
+
 let reducer = (state, action) => {
     switch (action.type) {
 
@@ -34,6 +40,9 @@ let reducer = (state, action) => {
         case "GENERATE_TEAMS": return randomiseReducer(state);
 
         case "PLAYERS_LOADED": return playersLoadedReducer(state);
+
+        case "ADD_PLAYERS": return setPlayerState(state, action);
+        
         default: return state;
     }
 };

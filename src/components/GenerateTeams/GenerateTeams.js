@@ -14,10 +14,7 @@ class GenerateTeams extends Component {
     }
 
     componentDidMount() {
-        const { handleLoad } = this.props;
-        handleLoad();
-
-        this.props.getPlayers()
+        this.props.getPlayers(); 
     }
 
     handleClick() {

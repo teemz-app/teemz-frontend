@@ -1,8 +1,7 @@
 import initial from "../Initial";
 
 /*
-In order to randomly pick 10 players, a nested loop is used. The first loop tells the inner logic to run until we have those ten players in the array.
-The inner loop ensures that no player is selected twice.
+TODO: document. 
 */
 
 
