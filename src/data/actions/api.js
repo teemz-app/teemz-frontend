@@ -1,12 +1,12 @@
 import axios from '../../data/axios-config';
-import { playersLoaded } from './state';
+import { addPlayers, playersLoaded } from './state';
 
 export const getPlayers = () => {
     return (dispatch) => {
         axios.get("players").then(({ data }) => {
             data.data.forEach((player) => {
                 dispatch(
-                playersLoaded(
+                    playersLoaded(
                     {
                         id: player.id,
                         name: player.name,

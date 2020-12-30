@@ -1,12 +1,46 @@
-const GenerateTeams = ({ onClick }) => ( 
-    <>
-        <button
-            className="doButton"
-            onClick= { onClick }
-        >
-            Generate Teams
-        </button>
-    </>
-);
+import { Component } from "react";
+
+class GenerateTeams extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            name: this.props.player.name,
+            wins: this.props.player.wins,
+            losses: this.props.player.losses
+        }
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    componentDidMount() {
+        const { handleLoad } = this.props;
+        handleLoad();
+
+        this.props.getPlayers()
+    }
+
+    handleClick() {
+        console.log("teams generated!");
+    }
+
+    render() {
+
+        return (
+            <>
+                <button
+                    className="doButton"
+                    onClick= { this.onClick }
+                >
+                    Generate Teams
+                </button>
+        </>
+        )
+    }
+}
 
 export default GenerateTeams;
+
+
+
+
