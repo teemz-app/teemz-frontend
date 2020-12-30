@@ -1,6 +1,6 @@
 // Initial state
 const initial = {
-    page: "GenerateMatch",
+    page: "menu",
     loaded: false,
 
     team_one_score: 0,

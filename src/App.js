@@ -1,17 +1,15 @@
-import GenerateMatch from './pages/GenerateMatch/GenerateMatch';
+import GeneratingMatch from './pages/GeneratingMatch';
 import GenerateTeams from './components/GenerateTeams';
-import Loading from './components/Loading';
+import GenerateMatch from './components/GenerateMatch';
 
 const App = () => ( 
     <>  
         <header>
             <h1 className="title">Teemz</h1>
         </header>
-        {/* <Loading> */}
             <GenerateTeams />
+            <GeneratingMatch />
             <GenerateMatch />
-        {/* </Loading> */}
-
     </>
 );
 

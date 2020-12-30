@@ -22,6 +22,12 @@ let reducer = (state, action) => {
 
         // Generate Teams
         case "GENERATE_TEAMS": return randomiseReducer(state);
+
+        // Navigate Pages
+        case "NAV_TO_GENERATE": return {
+            ...state,
+            page: "generate",
+        }
         
         default: return state;
     }
