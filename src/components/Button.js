@@ -1,6 +1,6 @@
 const Button = ({handleClick, label}) => {
     return (<>
-        <button onClick={ handleClick }>{ label }</button>
+        <button className="doButton" onClick={ handleClick }>{ label }</button>
     </>)
 }
 

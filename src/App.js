@@ -1,15 +1,11 @@
-import GeneratingMatch from './pages/GeneratingMatch';
-import GenerateTeams from './components/GenerateTeams';
-import GenerateMatch from './components/GenerateMatch';
+import GeneratePage from './components/GeneratePage/GeneratePage';
 
 const App = () => ( 
     <>  
         <header>
             <h1 className="title">Teemz</h1>
         </header>
-            <GenerateTeams />
-            <GeneratingMatch />
-            <GenerateMatch />
+            <GeneratePage />
     </>
 );
 
