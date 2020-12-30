@@ -17,8 +17,21 @@ const initial = {
         losses: 0,
         },
 
-    players: [],
+    // players: [],
     // players: ["Katara", "Ang", "Apa", "Sokka", "Momo", "Pabu", "Iroh", "Azula", "Zuko", "Toph"],
+    players: [
+        {id: 1, name: "Sokka", wins: 0, losses: 0},
+        {id: 2, name: "Ang", wins: 0, losses: 0},
+        {id: 3, name: "Appa", wins: 0, losses: 0},
+        {id: 4, name: "Momo", wins: 0, losses: 0},
+        {id: 5, name: "Iroh", wins: 0, losses: 0},
+        {id: 6, name: "Katara", wins: 0, losses: 0},
+        {id: 7, name: "Pabu", wins: 0, losses: 0},
+        {id: 8, name: "Azula", wins: 0, losses: 0},
+        {id: 9, name: "Zuko", wins: 0, losses: 0},
+        {id: 10, name: "Toph", wins: 0, losses: 0},
+    ],
+    
     team_one_players: [],
     team_two_players: [],
 

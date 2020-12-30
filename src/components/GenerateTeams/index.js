@@ -1,19 +1,17 @@
-import { connect } from "react-redux";
 import GenerateTeams from './GenerateTeams';
-import { getPlayers } from '../../data/actions/api';
+import { connect } from "react-redux";
+// import { getPlayers } from '../../data/actions/api';
+import initial from '../../data/Initial';
 
-const mapStateToProps = ({ players }) => {
+const mapStateToProps = ({players}) => {
     return {
-        name: players.name,
-        wins: players.wins,
-        losses: players.losses,
-    };
-}
-
+        players: players,
+    }
+};
 
 let mapDispatchToProps = (dispatch) => {
     return { 
-        getPlayers: () => dispatch(getPlayers()),
+        getPlayers: () => dispatch(playersLoadedReducer(initial)),
     }
 };
 

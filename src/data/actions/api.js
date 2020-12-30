@@ -5,7 +5,7 @@ export const getPlayers = () => {
     return (dispatch) => {
         axios.get("players").then(({ data }) => {
                 // dispatch(addPlayers(data));
-                dispatch(console.log(data));
+                // dispatch(console.log(data));
         });
     };
 };

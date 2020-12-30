@@ -3,19 +3,18 @@ import { Component } from "react";
 class GenerateTeams extends Component {
     constructor(props) {
         super(props);
+        console.log(this.props);
 
         this.state = {
-            name: this.props.player.name,
-            wins: this.props.player.wins,
-            losses: this.props.player.losses
+            players: this.props.players,
         }
 
         this.handleClick = this.handleClick.bind(this);
     }
 
-    componentDidMount() {
-        this.props.getPlayers(); 
-    }
+    // componentDidMount() {
+    //     this.props.getPlayers(); 
+    // }
 
     handleClick() {
         console.log("teams generated!");
