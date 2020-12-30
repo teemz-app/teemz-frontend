@@ -18,6 +18,7 @@ const GenerateMatch = () => {
     return <button
         className="doButton"
         onClick={ updatePage }>
-        Generate Match!</button>;
+        Generate Match!
+        </button>;
 }
     export default GenerateMatch;
