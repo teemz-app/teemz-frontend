@@ -3,7 +3,7 @@ import { playersLoaded } from './state';
 
 export const getPlayers = () => {
     return (dispatch) => {
-        axios.get("/players").then(({ data }) => {
+        axios.get("players").then(({ data }) => {
             data.data.forEach((player) => {
                 dispatch(
                 playersLoaded(
