@@ -1,7 +1,7 @@
-import { useSelector, useDispatch } from "react-redux";
+import { /*useSelector,*/ useDispatch } from "react-redux";
 
 const GenerateMatch = () => {
-    const page = useSelector(state => state.page);
+    // const page = useSelector(state => state.page);
     const dispatch = useDispatch();
 
     // sets up the initial value of counter

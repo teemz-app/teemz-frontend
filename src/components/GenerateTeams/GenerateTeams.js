@@ -12,10 +12,6 @@ class GenerateTeams extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    // componentDidMount() {
-    //     this.props.getPlayers(); 
-    // }
-
     handleClick() {
         console.log("teams generated!");
     }
