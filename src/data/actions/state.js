@@ -28,5 +28,29 @@ export const decTeamTwo = () => {
 export const generateTeams = () => {
     return {
         type: "GENERATE_TEAMS",
+
     }
 }
+
+// Download players
+export const playersLoaded = ({ id, name, wins, losses }) => {
+    return {
+        type: "PLAYERS_LOADED",
+        id,
+        name,
+        wins,
+        losses,
+    }
+}
+
+export const addPlayers = ({ id, name, wins, losses }) => {
+    return {
+        type: "ADD_PLAYERS",
+        payload: {
+            id,
+            name,
+            wins,
+            losses,
+        },
+    };
+};

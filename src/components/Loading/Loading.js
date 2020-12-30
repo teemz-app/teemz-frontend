@@ -1,6 +1,12 @@
 import { Component } from 'react';
 
 class Loading extends Component {
+    componentDidMount() {
+        // when loaded, do something
+        const { handleLoad } = this.props;
+        handleLoad();
+    }
+    
     render() {
         const { children, loaded } = this.props;
 

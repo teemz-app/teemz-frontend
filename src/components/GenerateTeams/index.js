@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { generateTeams } from '../../data/actions';
+import { generateTeams } from '../../data/actions/state';
 import GenerateTeams from './GenerateTeams';
 
 let mapDispatchToProps = (dispatch) => ({
