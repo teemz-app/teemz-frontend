@@ -1,7 +1,7 @@
-const RowPlayer = ({ name }) => (
+const RowPlayer = (player) => (
     <>
         <div className="teamCard_playerName">
-            <p>{ name }</p>
+            <p>{ player.name }</p>
         </div>
 
     </>
