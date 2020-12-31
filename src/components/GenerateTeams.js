@@ -1,9 +1,18 @@
-import { /*useSelector,*/ useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+
+
+const listPlayers = (players) => {
+    return players.map(player => {
+        return (<p key={player.id}>{player.name}</p>);
+    })
+}
 
 const GenerateTeams = () => {
+    const players = useSelector(state => state.players);
+
     const dispatch = useDispatch();
 
-    const getPlayers = () => dispatch({
+    const getAllPlayers = () => dispatch({
         type: "GET_PLAYERS"
     });
 
@@ -11,10 +20,11 @@ const GenerateTeams = () => {
             <>
                 <button
                     className="doButton"
-                    onClick= { getPlayers }
+                    onClick= { getAllPlayers }
                 >
                     Generate Teams
                 </button>
+                { listPlayers(players) }
         </>
         )
     }

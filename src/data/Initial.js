@@ -11,14 +11,6 @@ const initial = {
 
     teams_size: 10,
 
-    player: {
-        name: "",
-        wins: 0,
-        losses: 0,
-        },
-
-    // players: [],
-    // players: ["Katara", "Ang", "Apa", "Sokka", "Momo", "Pabu", "Iroh", "Azula", "Zuko", "Toph"],
     players: [
         {id: 1, name: "Sokka", wins: 0, losses: 0},
         {id: 2, name: "Ang", wins: 0, losses: 0},
