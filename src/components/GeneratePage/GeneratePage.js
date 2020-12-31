@@ -7,13 +7,21 @@ import setTeamMembers from '../../data/TeamGeneratingLogic/setTeamMembers';
 
 
 let GeneratePage = () => {
-    // const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
     let players = [...useSelector(state => state.players)];
     let teams_size = useSelector(state => state.teams_size);
 
+    // Select required players and generate two balanced teams
     let playerPool = selectedPlayers(teams_size, players);
     setTeamMembers(playerPool);
+
+    function passTeamsIntoState() {
+        dispatch ({
+            type: "GENERATE_TEAMS",
+            
+        })
+    }
 
 
     return (
