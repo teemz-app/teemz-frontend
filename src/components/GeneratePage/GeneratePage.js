@@ -3,35 +3,46 @@ import GeneratingMatch from '../../pages/GeneratingMatch';
 import Button from "../Button";
 import { useSelector, useDispatch } from 'react-redux';
 
-let selectedPlayers = (teams_size, players) => {
-    let randomPlayerIndex = () => Math.floor(Math.random() * (players.length));
+// Fisher yates shuffle to shuffle players array into random order
+let fisherYatesShuffle = (players) => {
+    for (let i = players.length - 1; i > 0; i -= 1) {
+        let j = Math.floor(Math.random() * (i + 1));
 
-    let allPlayers = [...players];
+        [players[i], players[j]] = [players[j], players[i]];
+    }
+    return players;
+}
+
+let selectedPlayers = (teams_size, players) => {
+    let allPLayers = [...fisherYatesShuffle(players)];
     let playerPool = [];
 
-    while (playerPool.length < teams_size) {
-        let index = randomPlayerIndex(); console.log("selected player: " + allPlayers[index].name);
-        playerPool.push(allPlayers[index]);
-        allPlayers.splice(index, 1);
+    for (let i = 0; i < teams_size; i += 1) {
+        playerPool.push(allPLayers[i]);
     }
-    console.log("playerpool after: " + playerPool);
+
+    console.log(playerPool);
     return playerPool;
 }
 
-let setTeamMembers = (teams_size, teamOnePlayers, teamTwoPlayers, playerPool) => {
+let setTeamMembers = (teamOnePlayers, teamTwoPlayers, playerPool) => {
+        // teamOnePlayers.length >= teamTwoPlayers.length ? teamTwoPlayers.push(playerPool[i]) : teamOnePlayers.push(playerPool[i]);
+    // let playersToPlay = [...playerPool];
+    // let playerWR = ({player}) => player.wins/(player.wins + player.losses);
 
-    for (let i = 0; i < teams_size; i += 1) {
-        teamOnePlayers.length >= teamTwoPlayers.length ? teamTwoPlayers.push(playerPool[i]) : teamOnePlayers.push(playerPool[i]);
+
+    for (let i = 0; i < playerPool.length; i += 1) {
+
     }
 
     return {
-        team_one_players: [...teamOnePlayers],
-        team_two_players: [...teamTwoPlayers],
+        team_one_players: teamOnePlayers,
+        team_two_players: teamTwoPlayers,
     };
 }
 
 let GeneratePage = () => {
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
     let players = [...useSelector(state => state.players)];
     let teams_size = useSelector(state => state.teams_size);
