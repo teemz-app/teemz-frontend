@@ -24,9 +24,21 @@ export const decTeamTwo = () => {
     }
 }
 
-export const navMenuRed = (state) => {
+export const navMenuRed = () => {
     return {
-        ...state,
         page: "menu",
+    }
+}
+
+// Bring in Players
+export const playersLoaded = ({ id, name, wins, losses }) => {
+    return {
+        type: "PLAYERS_LOADED",
+        payload: {
+            id: id,
+            name: name,
+            wins: wins,
+            losses: losses,
+        }
     }
 }

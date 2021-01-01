@@ -3,6 +3,7 @@ import TeamCardT2 from "../components/TeamCardT2";
 import Loading from '../components/Loading';
 
 
+
 const GeneratingMatch = () => ( 
     <>
         <Loading>
