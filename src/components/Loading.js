@@ -9,7 +9,7 @@ class Loading extends Component {
         return loaded ? children : (
             <div className="teamCard_container">
                 <p className="title">Loading...</p>
-                <img src={loadingIcon} alt="CGI football spinning" />
+                <img className="loadingIcon" src={loadingIcon} alt="CGI football spinning" />
             </div>
         );
     }
