@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/football-app-front/static/css/main.ccb689e9.chunk.css",
-    "main.js": "/football-app-front/static/js/main.3eec5b62.chunk.js",
-    "main.js.map": "/football-app-front/static/js/main.3eec5b62.chunk.js.map",
+    "main.css": "/football-app-front/static/css/main.9429f7f4.chunk.css",
+    "main.js": "/football-app-front/static/js/main.d105939b.chunk.js",
+    "main.js.map": "/football-app-front/static/js/main.d105939b.chunk.js.map",
     "runtime-main.js": "/football-app-front/static/js/runtime-main.b1e200f2.js",
     "runtime-main.js.map": "/football-app-front/static/js/runtime-main.b1e200f2.js.map",
     "static/js/2.841f693d.chunk.js": "/football-app-front/static/js/2.841f693d.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.c7c6003e.chunk.js": "/football-app-front/static/js/3.c7c6003e.chunk.js",
     "static/js/3.c7c6003e.chunk.js.map": "/football-app-front/static/js/3.c7c6003e.chunk.js.map",
     "index.html": "/football-app-front/index.html",
-    "static/css/main.ccb689e9.chunk.css.map": "/football-app-front/static/css/main.ccb689e9.chunk.css.map",
+    "static/css/main.9429f7f4.chunk.css.map": "/football-app-front/static/css/main.9429f7f4.chunk.css.map",
     "static/js/2.841f693d.chunk.js.LICENSE.txt": "/football-app-front/static/js/2.841f693d.chunk.js.LICENSE.txt",
     "static/media/index.css": "/football-app-front/static/media/background.f1daa933.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b1e200f2.js",
     "static/js/2.841f693d.chunk.js",
-    "static/css/main.ccb689e9.chunk.css",
-    "static/js/main.3eec5b62.chunk.js"
+    "static/css/main.9429f7f4.chunk.css",
+    "static/js/main.d105939b.chunk.js"
   ]
 }
