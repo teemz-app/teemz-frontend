@@ -23,3 +23,10 @@ export const decTeamTwo = () => {
         type: "DEC_TEAM_TWO",
     }
 }
+
+export const navMenuRed = (state) => {
+    return {
+        ...state,
+        page: "menu",
+    }
+}

@@ -8,9 +8,10 @@ import decReducerT2 from './ScoringCardsLogic/decReducerT2';
 
 // Navigate Pages
 import navGenPageReducer from "./NavigationLogic/navGenPageReducer";
-
+import { navMenuRed } from './actions/state';
 
 import setTeamsReducer from './TeamGeneratingLogic/setTeamsReducer';
+
 
 let reducer = (state, action) => {
     switch (action.type) {
@@ -25,6 +26,7 @@ let reducer = (state, action) => {
 
         // Navigate Pages
         case "NAV_TO_GENERATE": return navGenPageReducer(state);
+        case "NAV_TO_MENU": return navMenuRed(state); 
 
         // Generate Teams
         case "GENERATE_TEAMS": return setTeamsReducer(state);
