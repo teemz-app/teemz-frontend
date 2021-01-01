@@ -2,7 +2,7 @@
 GENERATING THE TWO TEAMS
 The top two players are passed into individual arrays. then second best player gets slightly higher level teammates than the best player.
 */
-let setTeamMembers = (playerPool) => {
+let setTeamMembers = (playerPool) => { // playerPool = [{p1},{p2}..{pn}]
     let firstOfT1 = playerPool[0];
     let firstOfT2 = playerPool[1];
 
