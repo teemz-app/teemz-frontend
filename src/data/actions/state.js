@@ -31,14 +31,9 @@ export const navMenuRed = () => {
 }
 
 // Bring in Players
-export const playersLoaded = ({ id, name, wins, losses }) => {
+export const playersLoaded = (players) => {
     return {
         type: "PLAYERS_LOADED",
-        payload: {
-            id: id,
-            name: name,
-            wins: wins,
-            losses: losses,
-        }
+        playload: players,
     }
 }

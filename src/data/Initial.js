@@ -12,7 +12,7 @@ const initial = {
     teams_size: 10,
 
     players: [
-        {id: 1, name: "tarik", wins: 0, losses: 2},
+        {id: 1, name: "Sokka", wins: 2, losses: 2},
         {id: 2, name: "Ang", wins: 1, losses: 0},
         {id: 3, name: "Appa", wins: 0, losses: 1},
         {id: 4, name: "Momo", wins: 5, losses: 15},

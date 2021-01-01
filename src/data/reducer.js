@@ -12,10 +12,10 @@ import { navMenuRed } from './actions/state';
 
 import setTeamsReducer from './TeamGeneratingLogic/setTeamsReducer';
 
-const playersLoadedReducer = (state, action) => {
+const playersLoadedReducer = (state, players) => {
     return {
         ...state,
-        players: [...state.players, action.payload],
+        players: players.payload,
         loaded: true,
     }
 }
@@ -37,7 +37,7 @@ let reducer = (state, action) => {
         case "NAV_TO_MENU": return navMenuRed(state); 
 
         // Generate Teams
-        case "PLAYERS_LOADED": return playersLoadedReducer(state, action);
+        case "PLAYERS_LOADED": return {...state, players: action.payload, loaded: true};
         case "GENERATE_TEAMS": return setTeamsReducer(state);
         
         default: return state;
