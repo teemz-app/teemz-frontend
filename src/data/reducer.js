@@ -6,10 +6,11 @@ import decReducerT1 from './ScoringCardsLogic/decReducerT1';
 import incReducerT2 from './ScoringCardsLogic/incReducerT2';
 import decReducerT2 from './ScoringCardsLogic/decReducerT2';
 
-// Generate Teams
-import randomiseReducer from './TeamGeneratingLogic/randomiseReducer';
+// Navigate Pages
+import navGenPageReducer from "./NavigationLogic/navGenPageReducer";
 
 
+import setTeamsReducer from './TeamGeneratingLogic/setTeamsReducer';
 
 let reducer = (state, action) => {
     switch (action.type) {
@@ -22,8 +23,12 @@ let reducer = (state, action) => {
         case "INC_TEAM_TWO": return incReducerT2(state);
         case "DEC_TEAM_TWO": return decReducerT2(state);
 
+        // Navigate Pages
+        case "NAV_TO_GENERATE": return navGenPageReducer(state);
+
         // Generate Teams
-        case "GENERATE_TEAMS": return randomiseReducer(state);
+        case "GENERATE_TEAMS": return setTeamsReducer(state);
+        
         default: return state;
     }
 };

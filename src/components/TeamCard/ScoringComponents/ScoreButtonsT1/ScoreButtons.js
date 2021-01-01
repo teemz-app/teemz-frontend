@@ -1,4 +1,4 @@
-const ScoreButtons = ({ onIncrement, onDecrement}) => ( 
+const ScoreButtons = ({ onIncrement, onDecrement }) => ( 
     <>
         <div>
             <button

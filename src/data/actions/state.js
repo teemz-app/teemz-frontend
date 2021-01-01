@@ -23,10 +23,3 @@ export const decTeamTwo = () => {
         type: "DEC_TEAM_TWO",
     }
 }
-
-// Generate Teams
-export const generateTeams = () => {
-    return {
-        type: "GENERATE_TEAMS",
-    }
-}
