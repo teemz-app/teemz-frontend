@@ -6,7 +6,7 @@ const PlayersCardT2 = ({ team_two_players }) => {
         <ul>
         {
             team_two_players.map(player => (
-                <RowPlayer name = { player.name } key = { player } />
+                <RowPlayer name = { player.name } key = { player.id } />
             ))
         }
         </ul>

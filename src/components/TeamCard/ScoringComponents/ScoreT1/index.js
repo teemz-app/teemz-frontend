@@ -7,7 +7,5 @@ let mapStateToProps = (state) => {
     };
 };
 
-
-
 export default connect(mapStateToProps)(Score);
 

@@ -6,10 +6,12 @@ import reportWebVitals from './reportWebVitals';
 
 import { Provider } from 'react-redux';
 import store from './data/store';
+import Header from './components/Header';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store= { store }>
+      <Header />
       <App />
     </Provider>
   </React.StrictMode>,
