@@ -1,10 +1,14 @@
 import TeamCardT1 from "../components/TeamCardT1";
 import TeamCardT2 from "../components/TeamCardT2";
+import Loading from '../components/Loading';
+
 
 const GeneratingMatch = () => ( 
-    <>  
-        <TeamCardT1 />
-        <TeamCardT2 />
+    <>
+        <Loading>
+            <TeamCardT1 />
+            <TeamCardT2 />
+        </Loading>
     </>
 );
 
