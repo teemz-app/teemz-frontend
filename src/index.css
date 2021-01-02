@@ -5,10 +5,12 @@
 
 @import "./styles/menu.css";
 
+
 @import "./styles/button.css";
 @import "./styles/imagery.css";
 
 @import "./styles/teamCard.css";
+@import "./styles/playerCard.css";
 
 
 .title {

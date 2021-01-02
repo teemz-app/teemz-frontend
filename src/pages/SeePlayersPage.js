@@ -3,7 +3,7 @@ import { connect} from 'react-redux';
 import Loading from '../components/Loading';
 
 const SeePlayersPage = ({players}) => (
-    <div>
+    <>
         <Loading>
         {players.map(player => {
                 return  <PlayerCard 
@@ -15,7 +15,7 @@ const SeePlayersPage = ({players}) => (
             })
         }
         </Loading>
-    </div>
+    </>
 )
 
 const mapStatetoProps = (state) => ({players: state.players});
