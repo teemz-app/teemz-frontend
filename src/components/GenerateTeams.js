@@ -8,7 +8,6 @@ const GenerateTeams = () => {
     });
 
     const onClick = () => {
-        // passTeamsIntoState();
         goToPage();
     }
 
