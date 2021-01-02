@@ -13,16 +13,6 @@ import navMenuPageReducer from './NavigationLogic/navMenuPageReducer';
 // Generate Teams
 import setTeamsReducer from './TeamGeneratingLogic/setTeamsReducer';
 
-
-// const playersLoadedReducer = (state, action) => {
-//     return {
-//         ...state,
-//         players: action.payload,
-//         loaded: true,
-//     }
-// }
-
-
 let reducer = (state, action) => {
     switch (action.type) {
 
