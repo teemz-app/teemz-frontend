@@ -1,6 +1,6 @@
 import PlayerCard from '../components/PlayerComponents/PlayerCard';
 import { connect} from 'react-redux';
-import Loading from '../components/Loading/Loading';
+import Loading from '../components/Loading';
 
 const SeePlayersPage = ({players}) => (
     <div>

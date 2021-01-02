@@ -9,8 +9,9 @@ export const getPlayers = () => {
     };
 };
 
+
+
 export const postMatch = ({ team_one_name, team_one_score, team_two_name, team_two_score }) => {
-    console.log('got here!!!')
     return () => {
         axios.post('/games', {
             team_one: team_one_name,
