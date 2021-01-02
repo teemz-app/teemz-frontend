@@ -8,14 +8,16 @@ import decReducerT2 from './ScoringCardsLogic/decReducerT2';
 
 // Navigate Pages
 import navGenPageReducer from "./NavigationLogic/navGenPageReducer";
-import { navMenuRed } from './actions/state';
+import navMenuPageReducer from './NavigationLogic/navMenuPageReducer';
 
+// Generate Teams
 import setTeamsReducer from './TeamGeneratingLogic/setTeamsReducer';
 
-const playersLoadedReducer = (state, players) => {
+
+const playersLoadedReducer = (state, action) => {
     return {
         ...state,
-        players: players.payload,
+        players: action.payload,
         loaded: true,
     }
 }
@@ -34,7 +36,7 @@ let reducer = (state, action) => {
 
         // Navigate Pages
         case "NAV_TO_GENERATE": return navGenPageReducer(state);
-        case "NAV_TO_MENU": return navMenuRed(state); 
+        case "NAV_TO_MENU": return navMenuPageReducer(state); 
 
         // Generate Teams
         case "PLAYERS_LOADED": return {...state, players: action.payload, loaded: true};

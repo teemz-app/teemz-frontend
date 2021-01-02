@@ -23,17 +23,3 @@ export const decTeamTwo = () => {
         type: "DEC_TEAM_TWO",
     }
 }
-
-export const navMenuRed = () => {
-    return {
-        page: "menu",
-    }
-}
-
-// Bring in Players
-export const playersLoaded = (players) => {
-    return {
-        type: "PLAYERS_LOADED",
-        playload: players,
-    }
-}
