@@ -5,7 +5,7 @@ import GeneratingMatch from '../../pages/GeneratingMatch';
 let GeneratePage = () => {
     return (
         <>
-            <GenerateTeams />
+            {/* <GenerateTeams /> */}
             <GeneratingMatch />
 
             {/* <Button

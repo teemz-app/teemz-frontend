@@ -1,6 +1,9 @@
 // import { useSelector } from "react-redux";
-import setTeamMembers from './setTeamMembers';
-import selectedPlayers from './selectedPlayers';
+import setTeamMembers from './logic/setTeamMembers';
+import selectedPlayers from './logic/selectedPlayers';
+// import { getPlayers } from '../actions/api';
+
+
 
 const setTeamsReducer = (state) => {
     let players =  state.players;
