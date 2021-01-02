@@ -1,4 +1,4 @@
-import GenerateTeams from '../../components/GenerateTeams';
+import GenerateTeams from '../components/GenerateTeams';
 
 let Menu = () => (
     <>
