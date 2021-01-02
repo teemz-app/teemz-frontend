@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 
-const GenerateTeams = () => {
+const SeePlayers = () => {
     const dispatch = useDispatch();
 
     const goToPage = () => dispatch({
@@ -19,7 +19,7 @@ const GenerateTeams = () => {
         )
     }
 
-export default GenerateTeams;
+export default SeePlayers;
 
 
 
