@@ -5,15 +5,16 @@ import Loading from '../components/Loading';
 const SeePlayersPage = ({players}) => (
     <>
         <Loading>
-        {players.map(player => {
-                return  <PlayerCard 
-                name = {player.name}
-                wins = { player.wins }
-                losses = { player.losses }
-                key = { player.id }
-                />
-            })
-        }
+            <h1 className="title">Main Menu</h1>
+            {players.map(player => {
+                    return  <PlayerCard 
+                    name = {player.name}
+                    wins = { player.wins }
+                    losses = { player.losses }
+                    key = { player.id }
+                    />
+                })
+            }
         </Loading>
     </>
 )
