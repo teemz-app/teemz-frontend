@@ -2,14 +2,16 @@
 import GeneratingMatch from '../../pages/GeneratingMatch';
 import Button from "../Button";
 
-let GeneratePage = ({ handleClick }) => {
+let GeneratePage = ({ handleClick, data }) => {
     return (
         <>
             {/* <GenerateTeams /> */}
             <GeneratingMatch />
 
             <Button
-            onClick={ handleClick }
+            handleClick={() => {
+                handleClick(data)
+            }}
             label="Save Game!"
             type="button"
             />

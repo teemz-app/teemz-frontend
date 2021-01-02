@@ -1,4 +1,4 @@
-.teamCard_container {
+.teamCard_container, .playerCard_container {
     background-color: var(--darkGreen);
     border-radius: 10px;
     margin: 2rem auto;
