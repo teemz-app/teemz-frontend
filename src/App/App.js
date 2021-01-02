@@ -1,4 +1,4 @@
-import GeneratePage from '../components/GeneratePage/GeneratePage';
+import GeneratePage from '../components/GeneratePage';
 import Menu from '../pages/Menu';
 
 const App = ({ page }) => {
