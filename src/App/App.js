@@ -4,7 +4,7 @@ import Menu from '../pages/Menu/Menu';
 const App = ({ page }) => {
 
     switch(page) {
-        case "generate": return <GeneratePage />;
+        case "generate": return <GeneratePage />; // page that shows teams
         case "menu": return <Menu /> ;
         default: return <Menu />;
     }
