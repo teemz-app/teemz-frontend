@@ -4,7 +4,7 @@ const GenerateTeams = () => {
     const dispatch = useDispatch();
 
     const goToPage = () => dispatch({
-        type: "NAV_TO_GENERATE"
+        type: "NAV_TO_PLAYERS"
     });
 
         return (
@@ -13,7 +13,7 @@ const GenerateTeams = () => {
                     className="doButton"
                     onClick= { goToPage }
                 >
-                    Generate Teams
+                    See Players
                 </button>
         </>
         )

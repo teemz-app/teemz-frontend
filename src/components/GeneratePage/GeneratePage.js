@@ -10,7 +10,6 @@ let GeneratePage = ({ handleClick, data }) => {
 
             <Button
             handleClick={() => {
-                console.log('clicking......')
                 handleClick(data)
             }}
             label="Save Game!"
