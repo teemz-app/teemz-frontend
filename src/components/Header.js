@@ -31,8 +31,3 @@ const Header = () => {
     }
 
 export default Header;
-
-{/* <h1 className="title"
-onClick={ goToPage }
-style={{cursor: "pointer"}}
->Teemz</h1> */}
