@@ -16,6 +16,8 @@ const initial = {
     team_one_players: [],
     team_two_players: [],
 
+    matches: [],
+
 };
 
 export default initial;
