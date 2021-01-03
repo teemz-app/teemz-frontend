@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import TeamSizeButtons from "./TeamSizeButtons";
-import { incTeamSize, decTeamSize } from '../../../../data/actions/state.js';
+import { incTeamSize, decTeamSize } from '../../../data/actions/state';
 
 let mapDispatchToProps = (dispatch) => ({
     onIncrement: () => dispatch(incTeamSize()),
