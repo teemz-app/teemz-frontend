@@ -1,5 +1,5 @@
 import playerWR from '../../data/TeamGeneratingLogic/logic/playerWR';
-
+// Display individual player data
 const PlayerCard = (player) => (
     <>
         <div className="playerCard_container">
@@ -17,7 +17,7 @@ const PlayerCard = (player) => (
 
             <div className="playerCard_dataRow">
                 <p className="playerCard_dataLabel">Win Rate:</p>
-                <p className="playerCard_data playerWR">{ playerWR(player).toFixed(2) }</p>
+                <p className="playerCard_data playerWR">{ playerWR(player).toFixed(2) }</p> {/* playerWR calcualted the player win rate */}
             </div>
         </div>
 
