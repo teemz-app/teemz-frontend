@@ -23,3 +23,11 @@ export const decTeamTwo = () => {
         type: "DEC_TEAM_TWO",
     }
 }
+
+export const updateTeamOneName = (data) => {
+    console.log(data);
+    return {
+        type: "UPDATE_TEAM_ONE",
+        data: data,
+    }
+}

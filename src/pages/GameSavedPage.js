@@ -14,6 +14,4 @@ let GameSavedPage = () => (
 )
 
 
-
-
 export default GameSavedPage;
