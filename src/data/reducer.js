@@ -10,10 +10,12 @@ import decReducerT2 from './ScoringCardsLogic/decReducerT2';
 import navGenPageReducer from "./NavigationLogic/navGenPageReducer";
 import navMenuPageReducer from './NavigationLogic/navMenuPageReducer';
 import navPlayersPageReducer from './NavigationLogic/navPlayersPageReducer';
+import navMatchesPageReducer from './NavigationLogic/navMatchesPageReducer';
 
 // Generate Teams
 import setTeamsReducer from './TeamGeneratingLogic/setTeamsReducer';
 import navSavedGamePageReducer from './NavigationLogic/navSavedGamePageReducer';
+
 
 
 let reducer = (state, action) => {
@@ -31,13 +33,15 @@ let reducer = (state, action) => {
         case "NAV_TO_MENU": return navMenuPageReducer(state); 
         case "NAV_TO_GENERATE": return navGenPageReducer(state);
         case "NAV_TO_PLAYERS": return navPlayersPageReducer(state);
+        case "NAV_TO_MATCHES": return navMatchesPageReducer (state);
         case "NAV_TO_SAVED_GAME": return navSavedGamePageReducer(state);
-
 
         // Generate Teams
         case "PLAYERS_LOADED": return {...state, players: action.payload, loaded: true};
         case "GENERATE_TEAMS": return setTeamsReducer(state);
-        
+
+        // Set Teams
+        case "MATCHES_LOADED": return {...state, matches: action.payload, loaded: true};
         default: return state;
     }
 };

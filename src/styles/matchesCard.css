@@ -1,0 +1,26 @@
+.matchCard_dataRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.matchCard_dataLabel {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--brightGreen);
+
+    width: 65%;
+
+    color: var(--darkGreen);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.matchCard_data {
+    color: var(--lightGreen);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-right: 10px;
+}
