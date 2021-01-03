@@ -35,17 +35,10 @@ class AddPlayer extends Component {
         return (
             <form
                 onSubmit={this.handleSubmit}>
-                <h2>Input Player</h2>
-                <div>
-                    <div >
-                        <label htmlFor="player name">
-                            Enter new Player Name:
-                        </label>
-
+                <div className="menu_playerContaier">
                         <input
+                            className="menu_inputField"
                             type="text"
-                            id="player name"
-                            name="player name"
                             value={name}
                             onChange={this.handleName}
                             maxLength="25"
@@ -57,8 +50,6 @@ class AddPlayer extends Component {
                                 }
                             }}
                         />
-                    </div>
-
                     <button disabled={name.length <= 2} type="submit">Add Player</button>
                 </div>
             </form>
