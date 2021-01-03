@@ -24,6 +24,8 @@ const initial = {
         losses: 0,
     },
 
+    playersAdded: 0,
+
 };
 
 export default initial;
