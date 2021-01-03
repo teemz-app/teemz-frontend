@@ -13,6 +13,7 @@ import navPlayersPageReducer from './NavigationLogic/navPlayersPageReducer';
 
 // Generate Teams
 import setTeamsReducer from './TeamGeneratingLogic/setTeamsReducer';
+import navSavedGamePageReducer from './NavigationLogic/navSavedGamePageReducer';
 
 
 let reducer = (state, action) => {
@@ -30,6 +31,7 @@ let reducer = (state, action) => {
         case "NAV_TO_MENU": return navMenuPageReducer(state); 
         case "NAV_TO_GENERATE": return navGenPageReducer(state);
         case "NAV_TO_PLAYERS": return navPlayersPageReducer(state);
+        case "NAV_TO_SAVED_GAME": return navSavedGamePageReducer(state);
 
 
         // Generate Teams
