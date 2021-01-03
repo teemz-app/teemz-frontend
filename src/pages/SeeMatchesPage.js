@@ -10,7 +10,7 @@ const SeeMatchesPage = ({matches}) => (
                     return  <MatchCard 
                     team_one = { match.team_one }
                     team_one_score = { match.team_one_score }
-                    team_two = { match.team_one }
+                    team_two = { match.team_two }
                     team_two_score = { match.team_two_score }
                     key = { match.id }
                     />
