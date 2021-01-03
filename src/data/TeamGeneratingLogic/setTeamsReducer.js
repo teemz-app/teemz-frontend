@@ -1,9 +1,7 @@
-// import { useSelector } from "react-redux";
 import setTeamMembers from './logic/setTeamMembers';
 import selectedPlayers from './logic/selectedPlayers';
-// import { getPlayers } from '../actions/api';
 
-
+// pass the two chosen teams into state
 
 const setTeamsReducer = (state) => {
     let players =  state.players;
