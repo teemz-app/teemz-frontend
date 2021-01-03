@@ -21,6 +21,11 @@
 input[type="text"] {
     background-color: var(--darkGreen);
     border-color: var(--lightGreen);
+
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+
+    width: 90%;
 }
 
 .teamCard_playerName {
