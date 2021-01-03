@@ -36,11 +36,12 @@ let reducer = (state, action) => {
         case "NAV_TO_MATCHES": return navMatchesPageReducer (state);
         case "NAV_TO_SAVED_GAME": return navSavedGamePageReducer(state);
 
-
         // Generate Teams
         case "PLAYERS_LOADED": return {...state, players: action.payload, loaded: true};
         case "GENERATE_TEAMS": return setTeamsReducer(state);
-        
+
+        // Set Teams
+        case "MATCHES_LOADED": return {...state, matches: action.payload, loaded: true};
         default: return state;
     }
 };

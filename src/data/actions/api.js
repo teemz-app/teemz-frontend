@@ -11,7 +11,7 @@ export const getPlayers = () => {
 
 export const getMatches = () => {
     return (dispatch) => {
-        axios.get('/matches').then((data) => {
+        axios.get('/games').then((data) => {
             console.log(data.data.data);
             dispatch({type: "MATCHES_LOADED", payload: data.data.data})
         })

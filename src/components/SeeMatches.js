@@ -19,4 +19,4 @@ const SeeMatches = () => {
         )
     }
 
-export default SeeMaatches;
+export default SeeMatches;

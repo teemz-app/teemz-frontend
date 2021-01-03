@@ -1,7 +1,8 @@
-const navMatchesPageReducer = (state) => {
+const navMatchesPageReducer = (state,) => {
     return {
         ...state,
         page: "matches",
+        loaded: true,
     }
 }
 
