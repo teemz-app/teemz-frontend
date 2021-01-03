@@ -5,7 +5,7 @@ import Loading from '../components/Loading';
 const SeePlayersPage = ({players}) => (
     <>
         <Loading>
-            <h1 className="title">Main Menu</h1>
+            <div style={{margin: "100px"}} />
             {players.map(player => {
                     return  <PlayerCard 
                     name = {player.name}
