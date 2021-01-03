@@ -9,6 +9,15 @@ export const getPlayers = () => {
     };
 };
 
+export const getMatches = () => {
+    return (dispatch) => {
+        axios.get('/matches').then((data) => {
+            console.log(data.data.data);
+            dispatch({type: "MATCHES_LOADED", payload: data.data.data})
+        })
+    };
+};
+
 export const postMatch = ({ team_one_name, team_one_score, team_two_name, team_two_score, team_one_players, team_two_players }) => {
     return (dispatch) => {
         axios.post('/games', {
