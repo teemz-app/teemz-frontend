@@ -50,7 +50,7 @@ class AddPlayer extends Component {
                                 }
                             }}
                         />
-                    <button disabled={name.length <= 2} type="submit">Add Player</button>
+                    <button disabled={name.length <= 2} type="submit" className="doButton">Add Player</button>
                 </div>
             </form>
         )
