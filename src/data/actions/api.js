@@ -66,3 +66,12 @@ export const postMatch = ({ team_one_name, team_one_score, team_two_name, team_t
         }).then(() => dispatch({type: "NAV_TO_SAVED_GAME"}));
     }
 }
+
+export const postPlayer = (player) => {
+    console.log(player);
+    return (dispatch) => {
+        axios.post('/players', {
+            name: player.name,
+        }).then(() => dispatch({type: "PLAYER_ADDED"}))
+    };
+}

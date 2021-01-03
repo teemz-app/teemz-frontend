@@ -50,6 +50,7 @@ let reducer = (state, action) => {
         // Handling Input data
         case "UPDATE_TEAM_ONE": return updateTeamOneNameReducer(state, action);
         case "UPDATE_TEAM_TWO": return updateTeamTwoNameReducer(state, action);
+        case "PLAYER_ADDED": return {...state, playersAdded: state.playersAdded+1};
         
         default: return state;
     }
