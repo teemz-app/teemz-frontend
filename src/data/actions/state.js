@@ -31,3 +31,11 @@ export const updateTeamOneName = (data) => {
         data: data,
     }
 }
+
+export const updateTeamTwoName = (data) => {
+    console.log(data);
+    return {
+        type: "UPDATE_TEAM_TWO",
+        data: data,
+    }
+}
