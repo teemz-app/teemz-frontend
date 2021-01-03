@@ -12,7 +12,7 @@ let selectedPlayers = (teams_size, players) => {
     let playerPool = [];
 
     // push first ten players of the shuffled array into playerPool, as this will be the pool of players we'll get teams from
-    for (let i = 0; i < teams_size; i += 1) {
+    for (let i = 0; i < (teams_size <= players.length ? teams_size : players.length); i += 1) {
         playerPool.push(allPLayers[i]);
     }
 
