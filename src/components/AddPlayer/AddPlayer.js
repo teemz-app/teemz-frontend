@@ -5,16 +5,14 @@ class AddPlayer extends Component {
     constructor(props) {
         super(props);
 
-        // local state
         this.state = {
             name: "",
         };
 
-        // bind events
         this.handleName = this.handleName.bind(this);
     };
 
-    // handle name input
+    // Name Input
     handleName = e => {
         this.setState({
             name: e.currentTarget.value
@@ -24,26 +22,21 @@ class AddPlayer extends Component {
     // handle form submit
     handleSubmit = e => {
         e.preventDefault();
-
-        this.props.handleSubmit({ ...this.state });
+        this.props.handleClick({ ...this.state });
 
         this.setState({
             name: "",
         });
-
     };
-
 
     render() {
         const { name } = this.state;
 
         return (
             <form
-                onSubmit={this.handleSubmit}
-                className="card playerInput"
-            >
-                <h2>Input Player <i className="fas fa-user-plus"></i></h2>
-                <div className="flex columnFlex">
+                onSubmit={this.handleSubmit}>
+                <h2>Input Player</h2>
+                <div>
                     <div >
                         <label htmlFor="player name">
                             Enter new Player Name:
@@ -55,7 +48,6 @@ class AddPlayer extends Component {
                             name="player name"
                             value={name}
                             onChange={this.handleName}
-                            disabled={requiredNumOfPlayers ? true : false}
                             maxLength="25"
                             minLength="2"
                             required
@@ -66,13 +58,8 @@ class AddPlayer extends Component {
                             }}
                         />
                     </div>
-                    <div>
-                        <label htmlFor="player skill">
-                            Player Skill:
-                        </label>
-                    </div>
 
-                    <button type="submit">Add Player</button>
+                    <button disabled={name.length <= 2} type="submit">Add Player</button>
                 </div>
             </form>
         )

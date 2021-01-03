@@ -21,6 +21,7 @@
 input[type="text"] {
     background-color: var(--darkGreen);
     border-color: var(--lightGreen);
+    width: 90%;
 }
 
 .teamCard_playerName {

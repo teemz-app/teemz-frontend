@@ -1,6 +1,7 @@
 import GenerateTeams from '../components/GenerateTeams';
 import SeePlayers from '../components/SeePlayers';
 import SeeMatches from '../components/SeeMatches';
+import AddPlayer from '../components/AddPlayer';
 
 let Menu = () => (
     <>
@@ -8,10 +9,11 @@ let Menu = () => (
         <GenerateTeams />
         <SeePlayers />
         <SeeMatches />
+        <AddPlayer />
 
     </nav>
     
     </>
-);
+);   
 
 export default Menu;

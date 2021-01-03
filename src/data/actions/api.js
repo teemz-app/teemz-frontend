@@ -67,13 +67,11 @@ export const postMatch = ({ team_one_name, team_one_score, team_two_name, team_t
     }
 }
 
-export const postPlayer = ({name}) => {
+export const postPlayer = (player) => {
+    console.log(player);
     return (dispatch) => {
-        axios.post('/player', {
-            name: name,
-            wins: 0,
-            losses: 0,
-
+        axios.post('/players', {
+            name: player.name,
         }).then(() => dispatch({type: "PLAYER_ADDED"}))
     };
 }
