@@ -16,6 +16,10 @@ import navMatchesPageReducer from './NavigationLogic/navMatchesPageReducer';
 import setTeamsReducer from './TeamGeneratingLogic/setTeamsReducer';
 import navSavedGamePageReducer from './NavigationLogic/navSavedGamePageReducer';
 
+// Update Team Names
+import updateTeamOneNameReducer from './InputLogic/updateTeamOneNameReducer';
+import updateTeamTwoNameReducer from './InputLogic/updateTeamTwoNameReducer';
+
 
 
 let reducer = (state, action) => {
@@ -42,6 +46,11 @@ let reducer = (state, action) => {
 
         // Set Teams
         case "MATCHES_LOADED": return {...state, matches: action.payload, loaded: true};
+
+        // Handling Input data
+        case "UPDATE_TEAM_ONE": return updateTeamOneNameReducer(state, action);
+        case "UPDATE_TEAM_TWO": return updateTeamTwoNameReducer(state, action);
+        
         default: return state;
     }
 };
