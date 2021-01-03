@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/football-app-front/static/css/main.89ea31a4.chunk.css",
-    "main.js": "/football-app-front/static/js/main.14009fea.chunk.js",
-    "main.js.map": "/football-app-front/static/js/main.14009fea.chunk.js.map",
+    "main.css": "/football-app-front/static/css/main.858abfc1.chunk.css",
+    "main.js": "/football-app-front/static/js/main.4946e2c6.chunk.js",
+    "main.js.map": "/football-app-front/static/js/main.4946e2c6.chunk.js.map",
     "runtime-main.js": "/football-app-front/static/js/runtime-main.0e387db8.js",
     "runtime-main.js.map": "/football-app-front/static/js/runtime-main.0e387db8.js.map",
-    "static/js/2.5086d4d3.chunk.js": "/football-app-front/static/js/2.5086d4d3.chunk.js",
-    "static/js/2.5086d4d3.chunk.js.map": "/football-app-front/static/js/2.5086d4d3.chunk.js.map",
+    "static/js/2.aad41ce9.chunk.js": "/football-app-front/static/js/2.aad41ce9.chunk.js",
+    "static/js/2.aad41ce9.chunk.js.map": "/football-app-front/static/js/2.aad41ce9.chunk.js.map",
     "static/js/3.312cff3f.chunk.js": "/football-app-front/static/js/3.312cff3f.chunk.js",
     "static/js/3.312cff3f.chunk.js.map": "/football-app-front/static/js/3.312cff3f.chunk.js.map",
     "index.html": "/football-app-front/index.html",
-    "static/css/main.89ea31a4.chunk.css.map": "/football-app-front/static/css/main.89ea31a4.chunk.css.map",
-    "static/js/2.5086d4d3.chunk.js.LICENSE.txt": "/football-app-front/static/js/2.5086d4d3.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/football-app-front/static/media/background.a4111d10.jpg",
+    "static/css/main.858abfc1.chunk.css.map": "/football-app-front/static/css/main.858abfc1.chunk.css.map",
+    "static/js/2.aad41ce9.chunk.js.LICENSE.txt": "/football-app-front/static/js/2.aad41ce9.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/football-app-front/static/media/background.b1e410ee.jpg",
     "static/media/loadingIcon.04f89c1e.gif": "/football-app-front/static/media/loadingIcon.04f89c1e.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.0e387db8.js",
-    "static/js/2.5086d4d3.chunk.js",
-    "static/css/main.89ea31a4.chunk.css",
-    "static/js/main.14009fea.chunk.js"
+    "static/js/2.aad41ce9.chunk.js",
+    "static/css/main.858abfc1.chunk.css",
+    "static/js/main.4946e2c6.chunk.js"
   ]
 }
