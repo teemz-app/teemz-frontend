@@ -17,6 +17,12 @@ const initial = {
     team_two_players: [],
 
     matches: [],
+    
+    player: {
+        name: "",
+        wins: 0,
+        losses: 0,
+    },
 
 };
 
