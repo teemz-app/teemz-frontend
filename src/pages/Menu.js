@@ -10,8 +10,11 @@ import TeamSizeButtons from '../components/SetTeamSize/TeamSizeButtons';
 let Menu = () => (
     <>
     <nav className="menu">
-        <TeamSize />
-        <TeamSizeButtons />
+        <div className="menu_setTeamSize">
+            <TeamSize />
+            <TeamSizeButtons />
+        </div>
+
         <GenerateTeams />
         <SeePlayers />
         <SeeMatches />

@@ -1,6 +1,6 @@
 const TeamSizeButtons = ({ onIncrement, onDecrement}) => ( 
     <>
-        <div>
+        <div className="menu_teamButtons_container">
             <button
                 className="teamCard_setScoreButton"
                 onClick= { onDecrement }
