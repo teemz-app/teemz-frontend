@@ -1,3 +1,80 @@
+# Table of contents
+
+- [Table of contents](#table-of-contents)
+- [Installing The React Project Locally](#installing-the-react-project-locally)
+- [What is Teemz?](#what-is-teemz)
+  - [Getting players](#getting-players)
+  - [Choosing Players](#choosing-players)
+  - [Picking Teams](#picking-teams)
+  - [Saving Matches](#saving-matches)
+  - [Adding Players](#adding-players)
+- [React App](#react-app)
+  - [Available Scripts](#available-scripts)
+    - [`npm start`](#npm-start)
+    - [`npm test`](#npm-test)
+    - [`npm run build`](#npm-run-build)
+    - [`npm run eject`](#npm-run-eject)
+  - [Learn More](#learn-more)
+    - [Code Splitting](#code-splitting)
+    - [Analyzing the Bundle Size](#analyzing-the-bundle-size)
+    - [Making a Progressive Web App](#making-a-progressive-web-app)
+    - [Advanced Configuration](#advanced-configuration)
+    - [Deployment](#deployment)
+    - [`npm run build` fails to minify](#npm-run-build-fails-to-minify)
+
+# Installing The React Project Locally
+
+   1. Clone the git repository by running this command in the directory you want it in.
+   
+   ```
+    git@github.com:merryface/football-app-front.git
+   ```
+
+   Or, if you have the GitHub CLI:
+
+   ```
+    gh repo clone merryface/football-app-front
+   ```
+
+
+   2. cd into the project directory
+   
+   ```
+    cd football-app-front
+   ```
+
+   3. Install all dependencies from npm
+   ```
+    npm install
+   ```
+
+<br>
+<br>
+
+# What is Teemz?
+Teemz is a football team generator, where the user can set the number of players per team, give the teams a name, and then save a match's result in a database. Users can also add new players into the database, as well as access a list of all players and all saved matches. The app uses Axios to make RESTful API requests.
+
+## Getting players
+The makes an API request to fetch player data whenever the `Generate Teams` or `See Players` buttons are clicked, meaning that those tools will always have the latest players data.
+## Choosing Players
+On the `menu` page the user changes the number of players in each team. If the number od players per team chosen happens to exceed half the total number of players in the database, the generate teams function will use half the number of players in the database as a value, which prevents an error from occuring. Teams are also capped at 16 players per side.
+
+## Picking Teams
+Each player has a win rate value. The higher the win rate, the more proficient the player is considered to be. The players array will be shuffled and then the first players in the array are taken until there are enough to fill two teams. This new array is sorted by win rate. The top two players are added to their respective teams. The player with the higher win rates will then get even indexed players in their team. i.e 4, 6, 8, 10 etc and the other team will get the odd indexed players in their team. This allows for a slightly better match balancing than simply using even or odd indexed players.
+
+## Saving Matches
+When a user clicks on `Save Game!` they are firing off a post API request, which stores the game data into the database. That data can then be viewed by clicking on `See Matches`, either in the `Menu` page or the `Game Saved` page.
+## Adding Players
+To add a player the user just has to enter a name of at least 2 characters in the add player input on the `Menu` page and then press return on their keyboard or click on the `Add Player` button.
+
+<br>
+<br>
+
+
+
+
+
+
 # React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
