@@ -4,6 +4,10 @@ import SeePlayersPage from '../pages/SeePlayersPage';
 import GameSavedPage from '../pages/GameSavedPage';
 import SeeMatchesPage from '../pages/SeeMatchesPage';
 
+/*
+App.js is where the app decides which page shows, based off of the page key value in state.
+*/
+
 const App = ({ page }) => {
 
     switch(page) {
@@ -15,6 +19,5 @@ const App = ({ page }) => {
         default: return <Menu />;
     }
 }
-
 
 export default App;
