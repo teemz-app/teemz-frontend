@@ -5,7 +5,7 @@ import { postPlayer } from '../../data/actions/api';
 // Dispatch 
 const mapDispatchToProps = dispatch => {
     return {
-        handleClick: (data) => dispatch(postPlayer(data)),
+        handleClick: (data) => dispatch(postPlayer(data)), // dispatch API request
     };
 };
 
