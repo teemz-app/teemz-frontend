@@ -1,4 +1,4 @@
-const PlayerCard = (match) => (
+const MatchCard = (match) => (
     <>
         <div className="matchCard_container">
             <div className="matchCard_dataRow">
@@ -14,4 +14,4 @@ const PlayerCard = (match) => (
     </>
 );
 
-export default PlayerCard;
+export default MatchCard;
