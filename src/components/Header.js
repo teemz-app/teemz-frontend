@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <>
             <header>
-                {page === "players" ?
+                {page === "players" || page === "matches" ?
                 <h1 className="stickyHeader"
                 onClick={ goToPage }
                 style={{cursor: "pointer"}}

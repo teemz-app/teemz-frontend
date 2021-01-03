@@ -16,11 +16,13 @@
 
 .title {
     color: var(--brightGreen);
+    background-color: var(--darkGreen);
 
     text-align: center;
     font-size: 3rem;
 
-    margin: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
 }
 
 body {
