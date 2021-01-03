@@ -1,4 +1,4 @@
-const setMatchesReducer = (state) => {
+const setMatchesReducer = (state) => { // pass matches into state
     let matches =  state.matches;
     return {
         ...state,

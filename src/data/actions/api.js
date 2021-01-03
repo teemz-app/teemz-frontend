@@ -1,5 +1,7 @@
 import axios from '../../data/axios-config';
 
+
+// get players and then fire off the generate teams action which puts al players into state and randomly selected players into teams
 export const getPlayers = () => {
     return (dispatch) => {
         axios.get('/players').then((data) => {
@@ -9,6 +11,7 @@ export const getPlayers = () => {
     };
 };
 
+// get matches and then fire off the generate matches action which puts al matches into state so that they can be listed
 export const getMatches = () => {
     return (dispatch) => {
         axios.get('/games').then((data) => {
@@ -19,6 +22,8 @@ export const getMatches = () => {
     };
 };
 
+
+// posts Match, and then patches all the players that were in that match so that their wins and losses data remain up to date
 export const postMatch = ({ team_one_name, team_one_score, team_two_name, team_two_score, team_one_players, team_two_players }) => {
     return (dispatch) => {
         axios.post('/games', {
@@ -67,6 +72,7 @@ export const postMatch = ({ team_one_name, team_one_score, team_two_name, team_t
     }
 }
 
+// add new player to the database
 export const postPlayer = (player) => {
     console.log(player);
     return (dispatch) => {

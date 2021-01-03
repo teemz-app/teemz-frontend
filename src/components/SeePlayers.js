@@ -1,5 +1,7 @@
 import { useDispatch } from "react-redux";
 
+// A navigation button to take the user to the see players page
+
 const SeePlayers = () => {
     const dispatch = useDispatch();
 

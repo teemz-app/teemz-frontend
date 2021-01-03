@@ -1,5 +1,7 @@
 import RowPlayer from '../RowPlayer';
 
+// Show all the players of one of the generated teams, by using the RowPlayer component
+
 const PlayersCardT1 = ({team_one_players}) => {
 
     return (

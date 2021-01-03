@@ -1,3 +1,5 @@
+// This component changes the teams_size state by 2 so that there is always an even number
+
 const TeamSizeButtons = ({ onIncrement, onDecrement}) => ( 
     <>
         <div className="menu_teamButtons_container">

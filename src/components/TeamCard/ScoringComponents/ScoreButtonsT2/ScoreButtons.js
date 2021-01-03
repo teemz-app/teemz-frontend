@@ -1,3 +1,4 @@
+// This component changes one of the team's score in state
 const ScoreButtons = ({ onIncrement, onDecrement}) => ( 
     <>
         <div>
