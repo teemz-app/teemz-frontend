@@ -15,6 +15,7 @@ export const getMatches = () => {
             console.log(data.data.data);
             dispatch({type: "MATCHES_LOADED", payload: data.data.data})
         })
+        .then(() => dispatch({type: "GENERATE_MATCHES"}));
     };
 };
 
