@@ -59,6 +59,8 @@
 
     width: 40%;
 
+    max-width: 280px;
+
     border-radius: 20px;
 }
 
