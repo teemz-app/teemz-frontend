@@ -24,8 +24,9 @@ export const decTeamTwo = () => {
     }
 }
 
+
+// Team Names
 export const updateTeamOneName = (data) => {
-    console.log(data);
     return {
         type: "UPDATE_TEAM_ONE",
         data: data,
@@ -33,9 +34,21 @@ export const updateTeamOneName = (data) => {
 }
 
 export const updateTeamTwoName = (data) => {
-    console.log(data);
     return {
         type: "UPDATE_TEAM_TWO",
         data: data,
+    }
+}
+
+// Set team size
+export const incTeamSize = () => {
+    return {
+        type: "INC_TEAM_SIZE",
+    }
+}
+
+export const decTeamSize = () => {
+    return {
+        type: "DEC_TEAM_SIZE",
     }
 }

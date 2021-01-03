@@ -1,13 +1,11 @@
 import { connect } from "react-redux";
-import Score from "./Score";
+import TeamSize from "./TeamSize";
 
 let mapStateToProps = (state) => {
     return {
-        team_two_score: state.team_one_score,
+        teams_size: state.teams_size,
     };
 };
 
-
-
-export default connect(mapStateToProps)(Score);
+export default connect(mapStateToProps)(TeamSize);
 

@@ -19,6 +19,8 @@ import navSavedGamePageReducer from './NavigationLogic/navSavedGamePageReducer';
 // Update Team Names
 import updateTeamOneNameReducer from './InputLogic/updateTeamOneNameReducer';
 import updateTeamTwoNameReducer from './InputLogic/updateTeamTwoNameReducer';
+import incTeamSizeReducer from './TeamSizeLogic/incTeamSizeReducer';
+import decTeamSizeReducer from './TeamSizeLogic/decTeamSizeReducer';
 
 
 
@@ -51,6 +53,10 @@ let reducer = (state, action) => {
         case "UPDATE_TEAM_ONE": return updateTeamOneNameReducer(state, action);
         case "UPDATE_TEAM_TWO": return updateTeamTwoNameReducer(state, action);
         case "PLAYER_ADDED": return {...state, playersAdded: state.playersAdded+1};
+
+        // Team Two Scoring
+        case "INC_TEAM_SIZE": return incTeamSizeReducer(state);
+        case "DEC_TEAM_SIZE": return decTeamSizeReducer(state);
         
         default: return state;
     }
