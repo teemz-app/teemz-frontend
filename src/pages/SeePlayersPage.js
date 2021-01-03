@@ -22,5 +22,3 @@ const SeePlayersPage = ({players}) => (
 const mapStatetoProps = (state) => ({players: state.players});
 
 export default connect(mapStatetoProps)(SeePlayersPage);
-
-// export default SeePlayersPage;
