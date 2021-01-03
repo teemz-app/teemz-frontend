@@ -1,5 +1,7 @@
 import { useDispatch } from "react-redux";
 
+// A navigation button to take the user to the generate teams page
+
 const GenerateTeams = () => {
     const dispatch = useDispatch();
 

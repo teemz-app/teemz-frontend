@@ -2,7 +2,7 @@ import ScoreCard from '../TeamCard/ScoringComponents/ScoreCardT2';
 import PlayersCardT2 from '../TeamCard/TeamComponents/PlayersCardT2';
 import { Component } from 'react';
 
-// class based component - state required
+// This component uses the previous components, but also tracks the state of the input field for the team name, and updates the global state with every keystroke.
 class TeamCardT2 extends Component {
     constructor(props) {
         super(props);
