@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/football-app-front/static/css/main.d0efb6c8.chunk.css",
-    "main.js": "/football-app-front/static/js/main.489b0528.chunk.js",
-    "main.js.map": "/football-app-front/static/js/main.489b0528.chunk.js.map",
-    "runtime-main.js": "/football-app-front/static/js/runtime-main.9e03372e.js",
-    "runtime-main.js.map": "/football-app-front/static/js/runtime-main.9e03372e.js.map",
-    "static/js/2.eff58dec.chunk.js": "/football-app-front/static/js/2.eff58dec.chunk.js",
-    "static/js/2.eff58dec.chunk.js.map": "/football-app-front/static/js/2.eff58dec.chunk.js.map",
-    "static/js/3.9dde73e6.chunk.js": "/football-app-front/static/js/3.9dde73e6.chunk.js",
-    "static/js/3.9dde73e6.chunk.js.map": "/football-app-front/static/js/3.9dde73e6.chunk.js.map",
-    "index.html": "/football-app-front/index.html",
-    "static/css/main.d0efb6c8.chunk.css.map": "/football-app-front/static/css/main.d0efb6c8.chunk.css.map",
-    "static/js/2.eff58dec.chunk.js.LICENSE.txt": "/football-app-front/static/js/2.eff58dec.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/football-app-front/static/media/background.b1e410ee.jpg",
-    "static/media/loadingIcon.04f89c1e.gif": "/football-app-front/static/media/loadingIcon.04f89c1e.gif"
+    "main.css": "/teemz-frontend/static/css/main.239d9377.chunk.css",
+    "main.js": "/teemz-frontend/static/js/main.90f02275.chunk.js",
+    "main.js.map": "/teemz-frontend/static/js/main.90f02275.chunk.js.map",
+    "runtime-main.js": "/teemz-frontend/static/js/runtime-main.6734d97b.js",
+    "runtime-main.js.map": "/teemz-frontend/static/js/runtime-main.6734d97b.js.map",
+    "static/js/2.61c46fd6.chunk.js": "/teemz-frontend/static/js/2.61c46fd6.chunk.js",
+    "static/js/2.61c46fd6.chunk.js.map": "/teemz-frontend/static/js/2.61c46fd6.chunk.js.map",
+    "static/js/3.b24340a0.chunk.js": "/teemz-frontend/static/js/3.b24340a0.chunk.js",
+    "static/js/3.b24340a0.chunk.js.map": "/teemz-frontend/static/js/3.b24340a0.chunk.js.map",
+    "index.html": "/teemz-frontend/index.html",
+    "static/css/main.239d9377.chunk.css.map": "/teemz-frontend/static/css/main.239d9377.chunk.css.map",
+    "static/js/2.61c46fd6.chunk.js.LICENSE.txt": "/teemz-frontend/static/js/2.61c46fd6.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/teemz-frontend/static/media/background.b1e410ee.jpg",
+    "static/media/loadingIcon.04f89c1e.gif": "/teemz-frontend/static/media/loadingIcon.04f89c1e.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.9e03372e.js",
-    "static/js/2.eff58dec.chunk.js",
-    "static/css/main.d0efb6c8.chunk.css",
-    "static/js/main.489b0528.chunk.js"
+    "static/js/runtime-main.6734d97b.js",
+    "static/js/2.61c46fd6.chunk.js",
+    "static/css/main.239d9377.chunk.css",
+    "static/js/main.90f02275.chunk.js"
   ]
 }
